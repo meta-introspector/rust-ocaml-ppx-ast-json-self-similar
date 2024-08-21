@@ -1,4 +1,60 @@
+** Self-Referential Pattern Detection in JSON Data**
 
+**Introduction**
+
+This repository contains a simple algorithm and code to detect self-referential patterns in JSON data. Self-referential patterns are where a key in a JSON object references a value that is itself a recursive definition of the same key.
+
+**What is a Self-Referential Pattern?**
+
+A self-referential pattern is a design pattern that involves a key in a JSON object referencing a value that is itself a recursive definition of the same key. This means that the key is defined in terms of itself.
+
+**Why are Self-Referential Patterns Important?**
+
+Self-referential patterns are important because they can help us understand recursive definitions and patterns in programming languages. They can also be used to identify self-referential data structures in database systems or other data storage systems.
+
+**How Does it Work?**
+
+The algorithm works by traversing the JSON object recursively, exploring each node and its children. At each node, it checks if the key matches any of the values in the node's children. If a match is found, it checks if the value is itself a recursive definition of the same key. If the value is a recursive definition, then it has found an instance of the self-referential pattern.
+
+**Key Features**
+
+* Detects self-referential patterns in JSON data
+* Independent of the specific AST (Abstract Syntax Tree) or compiler dump format
+* Compiler dump agnostic
+* Simple and efficient algorithm
+* Can be applied to various domains and industries
+
+**Use Cases**
+
+* Analyzing compiler dumps to understand recursive definitions and patterns in programming languages
+* Identifying self-referential data structures in database systems or other data storage systems
+* Detecting recursive patterns in graph data structures or network analysis
+
+**Algorithm Steps**
+
+1. Traverse the JSON object recursively, exploring each node and its children
+2. At each node, check if the key matches any of the values in the node's children
+3. If a match is found, check if the value is itself a recursive definition of the same key
+4. If the value is a recursive definition, then it has found an instance of the self-referential pattern
+
+**Example Output**
+
+```
+Found match: pld_name : txt2 = pld_name
+CONTAINS KEY=pld_name VALUE={"loc2":{"loc_end":{"pos_bol":21711,"pos_cnum":21724,"pos_fname":"./_opam/lib/ocaml/compiler-libs/parsetree.mli","pos_lnum":561},"loc_ghost":false,"loc_start":{"pos_bol":21711,"pos_cnum":21716,"pos_fname":"./_opam/lib/ocaml/compiler-libs/parsetree.mli","pos_lnum":561}},"txt2":"pld_name"}
+```
+
+**Future Research Directions**
+
+* Investigating the properties and characteristics of self-referential data structures
+* Developing new algorithms and techniques for searching and identifying self-referential patterns in large datasets
+* Exploring the applications of self-referential patterns in different domains and industries
+
+**Run the Code**
+
+To run the code, simply clone this repository and execute the script on your JSON data.
+
+Example 
 #+begin_src shell
 RUST_BACKTRACE=1 cargo run ~/2023/12/28/ppxlib/ocaml-opam-ppxlib-json-ast/ocaml/parsing/parsetree.mli.sig
 #+end_src
