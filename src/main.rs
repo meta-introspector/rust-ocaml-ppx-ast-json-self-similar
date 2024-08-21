@@ -8,41 +8,41 @@ use serde_json::json;
 use std::fs::File;
 use std::io::Read;
 // use std::collections::HashMap;
-use serde::{Deserialize, Serialize};
+//use serde::{Deserialize, Serialize};
 
 // Define a trait for the decoding functions
-trait DecodeFunction {
-    fn decode(&self, value: &Value) -> Result<(), serde_json::Error>;
-}
+// trait DecodeFunction {
+//     fn decode(&self, value: &Value) -> Result<(), serde_json::Error>;
+// }
 
 // Implement the decoding functions
-struct PsigOpenDecoder;
-struct PsigAttributeDecoder;
-struct PsigTypeDecoder;
+// struct PsigOpenDecoder;
+// struct PsigAttributeDecoder;
+// struct PsigTypeDecoder;
 
-impl DecodeFunction for PsigOpenDecoder {
-    fn decode(&self, value: &Value) -> Result<(), serde_json::Error> {
-        // Implement the decoding logic for PsigOpen
-        println!("Decoding PsigOpen: {:?}", value);
-        Ok(())
-    }
-}
+// impl DecodeFunction for PsigOpenDecoder {
+//     fn decode(&self, value: &Value) -> Result<(), serde_json::Error> {
+//         // Implement the decoding logic for PsigOpen
+//         println!("Decoding PsigOpen: {:?}", value);
+//         Ok(())
+//     }
+// }
 
-impl DecodeFunction for PsigAttributeDecoder {
-    fn decode(&self, value: &Value) -> Result<(), serde_json::Error> {
-        // Implement the decoding logic for PsigAttribute
-        println!("Decoding PsigAttribute: {:?}", value);
-        Ok(())
-    }
-}
+// impl DecodeFunction for PsigAttributeDecoder {
+//     fn decode(&self, value: &Value) -> Result<(), serde_json::Error> {
+//         // Implement the decoding logic for PsigAttribute
+//         println!("Decoding PsigAttribute: {:?}", value);
+//         Ok(())
+//     }
+// }
 
-impl DecodeFunction for PsigTypeDecoder {
-    fn decode(&self, value: &Value) -> Result<(), serde_json::Error> {
-        // Implement the decoding logic for PsigType
-        println!("Decoding PsigType: {:?}", value);
-        Ok(())
-    }
-}
+// impl DecodeFunction for PsigTypeDecoder {
+//     fn decode(&self, value: &Value) -> Result<(), serde_json::Error> {
+//         // Implement the decoding logic for PsigType
+//         println!("Decoding PsigType: {:?}", value);
+//         Ok(())
+//     }
+// }
 
 // // Define a map from names to decoding functions
 // fn get_decoding_functions() -> HashMap<String, Box<dyn DecodeFunction>> {
@@ -54,65 +54,65 @@ impl DecodeFunction for PsigTypeDecoder {
 // }
 
 
-// Define a trait for the psig desc types
-trait PsigDesc {
-    fn decode(value: &Value) -> Result<Self, serde_json::Error>
-    where
-        Self: Sized;
-}
+// // Define a trait for the psig desc types
+// trait PsigDesc {
+//     fn decode(value: &Value) -> Result<Self, serde_json::Error>
+//     where
+//         Self: Sized;
+// }
 
-// Implement the psig desc types
-#[derive(Serialize, Deserialize, Debug)]
-struct PsigOpen;
+// // Implement the psig desc types
+// #[derive(Serialize, Deserialize, Debug)]
+// struct PsigOpen;
 
-impl PsigDesc for PsigOpen {
-    fn decode(value: &Value) -> Result<Self, serde_json::Error> {
-        // Implement the decoding logic for PsigOpen
-        println!("Decoding PsigOpen: {:?}", value);
-        Ok(PsigOpen)
-    }
-}
+// impl PsigDesc for PsigOpen {
+//     fn decode(value: &Value) -> Result<Self, serde_json::Error> {
+//         // Implement the decoding logic for PsigOpen
+//         println!("Decoding PsigOpen: {:?}", value);
+//         Ok(PsigOpen)
+//     }
+// }
 
-#[derive(Serialize, Deserialize, Debug)]
-struct PsigAttribute;
+// #[derive(Serialize, Deserialize, Debug)]
+// struct PsigAttribute;
 
-impl PsigDesc for PsigAttribute {
-    fn decode(value: &Value) -> Result<Self, serde_json::Error> {
-        // Implement the decoding logic for PsigAttribute
-        println!("Decoding PsigAttribute: {:?}", value);
-        Ok(PsigAttribute)
-    }
-}
+// impl PsigDesc for PsigAttribute {
+//     fn decode(value: &Value) -> Result<Self, serde_json::Error> {
+//         // Implement the decoding logic for PsigAttribute
+//         println!("Decoding PsigAttribute: {:?}", value);
+//         Ok(PsigAttribute)
+//     }
+// }
 
-#[derive(Serialize, Deserialize, Debug)]
-struct PsigType;
+// #[derive(Serialize, Deserialize, Debug)]
+// struct PsigType;
 
-impl PsigDesc for PsigType {
-    fn decode(value: &Value) -> Result<Self, serde_json::Error> {
-        // Implement the decoding logic for PsigType
-        println!("Decoding PsigType: {:?}", value);
-        Ok(PsigType)
-    }
-}
+// impl PsigDesc for PsigType {
+//     fn decode(value: &Value) -> Result<Self, serde_json::Error> {
+//         // Implement the decoding logic for PsigType
+//         println!("Decoding PsigType: {:?}", value);
+//         Ok(PsigType)
+//     }
+// }
 
 
 
-trait PsigDescDecoder {
-    fn decode(&self, value: &Value) -> Result<Box<dyn PsigDesc>, serde_json::Error>;
-}
+// trait PsigDescDecoder {
+//     fn decode(&self, value: &Value) -> Result<Box<dyn PsigDesc>, serde_json::Error>;
+// }
 
-struct PsigDescDecoderImpl<F> {
-    func: F,
-}
+// struct PsigDescDecoderImpl<F> {
+//     func: F,
+// }
 
-impl<F> PsigDescDecoder for PsigDescDecoderImpl<F>
-where
-    F: Fn(&Value) -> Result<Box<dyn PsigDesc>, serde_json::Error>,
-{
-    fn decode(&self, value: &Value) -> Result<Box<dyn PsigDesc>, serde_json::Error> {
-        (self.func)(value)
-    }
-}
+// impl<F> PsigDescDecoder for PsigDescDecoderImpl<F>
+// where
+//     F: Fn(&Value) -> Result<Box<dyn PsigDesc>, serde_json::Error>,
+// {
+//     fn decode(&self, value: &Value) -> Result<Box<dyn PsigDesc>, serde_json::Error> {
+//         (self.func)(value)
+//     }
+// }
 
 // fn get_psig_desc_types() -> HashMap<String, Box<dyn PsigDescDecoder>> {
 //     let mut map = HashMap::new();
@@ -167,50 +167,75 @@ where
 
 // // Dispatch the decoding function based on the name
 //use serde_json::Error;
-fn decode_psig_desc(name: &str, value: &Value) -> Result<(), serde_json::Error> {
-    println!("decode_psig_desc: {}", name);    
-    match name {
-        "Psig_open" => PsigOpen::decode(value).map(|_| ()),
-        "Psig_attribute" => PsigAttribute::decode(value).map(|_| ()),
-        "Psig_type" => PsigType::decode(value).map(|_| ()),
-	_ => unreachable!(),
+// fn decode_psig_desc(name: &str, value: &Value) -> Result<(), serde_json::Error> {
+//     println!("decode_psig_desc: {}", name);    
+//     match name {
+//         "Psig_open" => PsigOpen::decode(value).map(|_| ()),
+//         "Psig_attribute" => PsigAttribute::decode(value).map(|_| ()),
+//         "Psig_type" => PsigType::decode(value).map(|_| ()),
+// 	_ => unreachable!(),
+//     }
+// }
+
+// fn print_psig_desc(psig_desc: Value) {
+//     // Check if the value is an object
+//     // if let Value::Object(obj) = &json {
+//         // Check if the object has a key
+//         // if let Some(psig_desc) = obj.get("psig_desc") {
+//             // Check if psig_desc is an array
+//             if let Value::Array(ref psig_desc_arr) = psig_desc {
+//                 // Check if the array has at least three elements
+//                 if psig_desc_arr.len() >= 2 {
+//                     // Access the first element
+//                     println!("psig_desc first element: {}", psig_desc_arr[0]);
+// 		    let str = psig_desc_arr[0].as_str().unwrap();
+// 		    let des = psig_desc.clone();
+// 		    decode_psig_desc(
+// 			&str,
+// 			&des).unwrap();
+		    
+//                     // Access the second element
+//                     //println!("psig_desc second element: {:?}", psig_desc_arr[1]);
+		    
+//                     // // Access the third element
+//                     // if let Value::Array(third_elem_arr) = &psig_desc_arr[2] {
+//                     //     // if let Value::Object(third_elem_obj) = &third_elem_arr[0] {
+//                     //         // Access the txt2 value
+//                     //     // println!("txt2: {}", third_elem_obj.get("txt2").unwrap());
+// 		    // 	 println!("DEBUG: {}", third_elem_arr[0]);
+//                     //     // }
+//                     // }
+//                 }
+//             }
+//         // }
+//     // }
+// }
+
+
+fn foo(item: &Value) {
+    if let Value::Array(arr) = &item {
+        for item in arr {
+	    foo(item);
+	}
+    }    
+    if let Value::Object(obj) = &item {
+	for (key, value) in obj.iter() {
+	    let k =key.to_string();
+	    let v =value.to_string();
+	    if k.find(v.as_str()).is_some() {
+		println!("k v: {} {}", k, v);
+	    }	    
+	    if v.find(k.as_str()).is_some() {
+		println!("CONTAINS KEY={} VALUE={}",k,v);
+	    }
+	    //foo(k); k is String
+	    foo(value);
+	}
     }
-}
 
-fn print_psig_desc(psig_desc: Value) {
-    // Check if the value is an object
-    // if let Value::Object(obj) = &json {
-        // Check if the object has a key
-        // if let Some(psig_desc) = obj.get("psig_desc") {
-            // Check if psig_desc is an array
-            if let Value::Array(ref psig_desc_arr) = psig_desc {
-                // Check if the array has at least three elements
-                if psig_desc_arr.len() >= 2 {
-                    // Access the first element
-                    println!("psig_desc first element: {}", psig_desc_arr[0]);
-		    let str = psig_desc_arr[0].as_str().unwrap();
-		    let des = psig_desc.clone();
-		    decode_psig_desc(
-			&str,
-			&des).unwrap();
-		    
-                    // Access the second element
-                    //println!("psig_desc second element: {:?}", psig_desc_arr[1]);
-		    
-                    // // Access the third element
-                    // if let Value::Array(third_elem_arr) = &psig_desc_arr[2] {
-                    //     // if let Value::Object(third_elem_obj) = &third_elem_arr[0] {
-                    //         // Access the txt2 value
-                    //     // println!("txt2: {}", third_elem_obj.get("txt2").unwrap());
-		    // 	 println!("DEBUG: {}", third_elem_arr[0]);
-                    //     // }
-                    // }
-                }
-            }
-        // }
-    // }
+    
 }
-
+		       
 fn self_similar_search(json_file_path: &str// , model_path: &str
 ) -> serde_json::Value {
     let mut file = match File::open(json_file_path) {
@@ -225,46 +250,48 @@ fn self_similar_search(json_file_path: &str// , model_path: &str
     
     let json: serde_json::Value = serde_json::from_str(&contents).unwrap();
 
-    // Check if the value is an array
-    if let Value::Array(arr) = &json {
-        // Iterate over the array
-        for item in arr {
-            // Check if the item is an object
-            if let Value::Object(obj) = &item {
-                // Check if the object has a key
-                if let Some(psig_desc) = obj.get("psig_desc") {
-		    print_psig_desc(psig_desc.clone());
+    foo(&json);
+    
+//     // Check if the value is an array
+//     if let Value::Array(arr) = &json {
+//         // Iterate over the array
+//         for item in arr {
+//             // Check if the item is an object
+//             if let Value::Object(obj) = &item {
+//                 // Check if the object has a key
+//                 if let Some(psig_desc) = obj.get("psig_desc") {
+// 	//	    print_psig_desc(psig_desc.clone());
 		    
-                    // // Check if the psig_desc is an array
-                    // if let Value::Array(psig_desc_arr) = psig_desc {
-                    //     // Iterate over the psig_desc array
-                    //     for psig_desc_item in psig_desc_arr {
-                    //         // Check if the psig_desc item is an object
-                    //         if let Value::Object(psig_desc_obj) = &psig_desc_item {
-                    //             // Access the attr_loc object
-                    //             if let Some(attr_loc) = psig_desc_obj.get("attr_loc") {
-                    //                 // // Check if attr_loc is an object
-                    //                 // if let Value::Object(attr_loc_obj) = attr_loc {
-                    //                 //     // Access the loc_end object
-                    //                 //     if let Some(loc_end) = attr_loc_obj.get("loc_end") {
-                    //                 //         // Check if loc_end is an object
-                    //                 //         if let Value::Object(loc_end_obj) = loc_end {
-                    //                 //             // Access the pos_bol, pos_cnum, pos_fname, pos_lnum values
-                    //                 //             println!("pos_bol: {}", loc_end_obj.get("pos_bol").unwrap());
-                    //                 //             println!("pos_cnum: {}", loc_end_obj.get("pos_cnum").unwrap());
-                    //                 //             println!("pos_fname: {}", loc_end_obj.get("pos_fname").unwrap());
-                    //                 //             println!("pos_lnum: {}", loc_end_obj.get("pos_lnum").unwrap());
-                    //                 //         }
-                    //                 //     }
-                    //                 // }
-                    //             }
-                    //         }
-                        // }
-//                }
-                }
-            }
-        }
-    }
+//                     // // Check if the psig_desc is an array
+//                     // if let Value::Array(psig_desc_arr) = psig_desc {
+//                     //     // Iterate over the psig_desc array
+//                     //     for psig_desc_item in psig_desc_arr {
+//                     //         // Check if the psig_desc item is an object
+//                     //         if let Value::Object(psig_desc_obj) = &psig_desc_item {
+//                     //             // Access the attr_loc object
+//                     //             if let Some(attr_loc) = psig_desc_obj.get("attr_loc") {
+//                     //                 // // Check if attr_loc is an object
+//                     //                 // if let Value::Object(attr_loc_obj) = attr_loc {
+//                     //                 //     // Access the loc_end object
+//                     //                 //     if let Some(loc_end) = attr_loc_obj.get("loc_end") {
+//                     //                 //         // Check if loc_end is an object
+//                     //                 //         if let Value::Object(loc_end_obj) = loc_end {
+//                     //                 //             // Access the pos_bol, pos_cnum, pos_fname, pos_lnum values
+//                     //                 //             println!("pos_bol: {}", loc_end_obj.get("pos_bol").unwrap());
+//                     //                 //             println!("pos_cnum: {}", loc_end_obj.get("pos_cnum").unwrap());
+//                     //                 //             println!("pos_fname: {}", loc_end_obj.get("pos_fname").unwrap());
+//                     //                 //             println!("pos_lnum: {}", loc_end_obj.get("pos_lnum").unwrap());
+//                     //                 //         }
+//                     //                 //     }
+//                     //                 // }
+//                     //             }
+//                     //         }
+//                         // }
+// //                }
+//                 }
+//             }
+//         }
+//     }
 
     // println!("The value is: {}", json.as_str().unwrap());
     // return json
@@ -321,8 +348,8 @@ fn main() {
 	let json_file_path = argument;
 
 	let s = json_file_path.into_string().unwrap();
-	println!("DEBG {:?}",s);
+//	println!("DEBG {:?}",s);
 	let output_json = self_similar_search(&s);
-	println!("{}",output_json.to_string());
+//	println!("{}",output_json.to_string());
     }
 }
