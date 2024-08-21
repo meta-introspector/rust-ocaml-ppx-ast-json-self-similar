@@ -1,3 +1,4 @@
+use std::env;
 use crate::serde_json::Value;
 use serde_json;
 use serde_json::json;
@@ -313,10 +314,15 @@ fn self_similar_search(json_file_path: &str// , model_path: &str
     return output_json
 }
 
-fn main() {
-    let json_file_path = "/time/2023/12/28/ppxlib/ocaml-opam-ppxlib-json-ast/ocaml/parsing/parsetree.mli.sig.json";
-    // let model_path = "/time/2023/12/28/ppxlib/ocaml-opam-ppxlib-json-ast/ocaml/file.bin";
 
-    let output_json = self_similar_search(json_file_path);
-    println!("{}",output_json.to_string());
+
+fn main() {
+    for argument in env::args_os().skip(1) {
+	let json_file_path = argument;
+
+	let s = json_file_path.into_string().unwrap();
+	println!("DEBG {:?}",s);
+	let output_json = self_similar_search(&s);
+	println!("{}",output_json.to_string());
+    }
 }
