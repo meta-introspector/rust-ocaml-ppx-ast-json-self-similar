@@ -1,7 +1,7 @@
 use std::env;
 use crate::serde_json::Value;
 use serde_json;
-use serde_json::json;
+//use serde_json::json;
 
 //use serde::de::Error;
 // use serde_json::json::Value;
@@ -212,6 +212,64 @@ use std::io::Read;
 // }
 
 
+// fn checkfoo(name:&str, item: &Value) {
+//     if let Value::Array(arr) = &item {
+//         for item in arr {
+// 	    checkfoo(name,item);
+// 	}
+//     }    
+//     if let Value::Object(obj) = &item {
+// 	for (_key, value) in obj.iter() {
+// 	    checkfoo(name, value);
+// 	}
+//     }
+// }
+
+fn search_values(obj: &serde_json::Value, search_string: &str) -> bool {
+    match obj {
+        serde_json::Value::Array(arr) => {
+            for item in arr {
+                if search_values(item, search_string)
+		{
+		    return true
+		}
+
+            }
+	    return false
+        }
+        serde_json::Value::Object(obj) => {
+            for (key, value) in obj {
+                if let serde_json::Value::String(val) = value {
+                    if val.to_lowercase().find(search_string.to_lowercase().as_str()).is_some() {
+                        println!("Found match: {} : {} = {}", search_string, key, val);
+			return true
+                    }
+		    else
+		    {
+			(); // pass
+		    }
+                } else {
+                    if search_values(value, search_string) {
+			return true
+		    }
+	        }
+            }
+	    return false
+        }
+        serde_json::Value::String(val) => {
+            if val.to_lowercase().find(search_string.to_lowercase().as_str()).is_some() {
+		println!("Found match Str: {} IN {}", search_string, val);
+		return true
+            }
+	    else
+	    {
+		return false
+	    }
+        }
+        _ => false
+    }
+}
+    
 fn foo(item: &Value) {
     if let Value::Array(arr) = &item {
         for item in arr {
@@ -221,23 +279,22 @@ fn foo(item: &Value) {
     if let Value::Object(obj) = &item {
 	for (key, value) in obj.iter() {
 	    let k =key.to_string();
-	    let v =value.to_string();
-	    if k.find(v.as_str()).is_some() {
-		println!("k v: {} {}", k, v);
-	    }	    
-	    if v.find(k.as_str()).is_some() {
+
+	    if search_values(value,k.as_str()) // search for k in the subobjects of value
+	    {
+		let v =value.to_string();
 		println!("CONTAINS KEY={} VALUE={}",k,v);
 	    }
+	    //checkfoo(k.as_str(), value);
+		
 	    //foo(k); k is String
 	    foo(value);
 	}
     }
-
-    
 }
 		       
 fn self_similar_search(json_file_path: &str// , model_path: &str
-) -> serde_json::Value {
+) {
     let mut file = match File::open(json_file_path) {
         Ok(file) => file,
         Err(err) => panic!("Could not open JSON file: {}", err),
@@ -329,8 +386,8 @@ fn self_similar_search(json_file_path: &str// , model_path: &str
     //     }
     // }
 
-     let output_json = json!({
-         "simple_hashing": {}});
+    //let output_json = json!({
+    //   "simple_hashing": {}});
     // // 	    let output_json = json!({
     // // 		"simple_hashing": {"collisions": simple_hashing_collisions},
     // // 		"fuzzy_matching": {"collisions": fuzzy_matching_collisions},
@@ -338,7 +395,7 @@ fn self_similar_search(json_file_path: &str// , model_path: &str
     // // 	    });
     // 	}
     // });
-    return output_json
+    //return output_json
 }
 
 
@@ -349,7 +406,7 @@ fn main() {
 
 	let s = json_file_path.into_string().unwrap();
 //	println!("DEBG {:?}",s);
-	let output_json = self_similar_search(&s);
+	self_similar_search(&s);
 //	println!("{}",output_json.to_string());
     }
 }
