@@ -1,0 +1,11 @@
+[package]
+name = "self-similar"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+serde_json = "1.0.44"
+serde = "1.0"
+rust-bert = "0.15.0"
+crypto = "0.5.1"
+tokio = { version = "1.1", features=["full"] }
