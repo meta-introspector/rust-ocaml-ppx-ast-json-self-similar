@@ -58,3 +58,35 @@ Example
 #+begin_src shell
 RUST_BACKTRACE=1 cargo run ~/2023/12/28/ppxlib/ocaml-opam-ppxlib-json-ast/ocaml/parsing/parsetree.mli.sig
 #+end_src
+
+
+** Report
+
+*** Implementation
+|  Count | name |
+|  1 | pc_lhs     |
+|  1 | pc_rhs     |
+|  1 | pld_name   |
+|  1 | ptype_kind |
+|  2 | pmb_expr   |
+|  2 | pvb_pat    |
+|  3 | pmod_desc  |
+| 14 | ppat_desc  |
+| 14 | pvb_expr   |
+| 16 | pstr_desc  |
+| 17 | pexp_desc  |
+
+*** Signatures
+
+|  Count | name |
+|  5 | pld_name   |
+|  5 | psig_desc  |
+|  5 | ptype_kind |
+| 13 | pexp_desc  |
+
+So the only common between signature and implementations is ptype_kind
+
+
+* simple test
+./target/debug/self-similar /time/2023/12/28/ppxlib/ocaml-opam-ppxlib-json-ast/ocaml/_opam/lib/ocaml/compiler-libs/parsetree.mli.sig > report1.txt
+
