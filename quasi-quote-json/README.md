@@ -12,6 +12,8 @@ cargo run --bin example_generated
 
 Results
 
+|count| path|
+------|------|
 | 98  | json[N].psig_desc[N][NN].ptype_kind[N][N].pcd_attributes[N].attr_payload[N][N].pstr_desc[N].pexp_loc_stack   |
 | 98  | json[N].psig_desc[N][NN].ptype_kind[N][N].pcd_attributes[N].attr_payload[N][N].pstr_loc                      |
 | 98  | json[N].psig_desc[N][NN].ptype_kind[N][N].pcd_attributes[N].attr_payload[N][N].pstr_loc.loc_end              |
