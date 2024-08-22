@@ -90,3 +90,48 @@ So the only common between signature and implementations is ptype_kind
 * simple test
 ./target/debug/self-similar /time/2023/12/28/ppxlib/ocaml-opam-ppxlib-json-ast/ocaml/_opam/lib/ocaml/compiler-libs/parsetree.mli.sig > report1.txt
 
+* modes of operation
+* decide vs act
+* orentation of observed inputs
+** building models
+*** json schemas
+* transformation
+* recontextualization
+adding of context
+removing of context
+* 
+* observe vs act
+* output vs input
+* dynamic vs static
+* changing vs constant
+* contingent vs declared
+* Attributes vs Features
+** Exfiltration vs Introspection.
+** Introspection is viewing inward
+** actions taken for observability of view, stalking your prey, hunting.
+directed action towards hunger
+basic economic behaviour
+basic survival instinct
+biological needs
+biological instinct
+** genetic programs
+*** environmental information
+***** abundance of food
+** meta programming
+creation of memes from genes, observing and cataloging genes must be an instinctual behaviour.
+*** shaman technology
+magical rituals surrounding technlogy. cargo cult.
+
+** Public vs Private
+exfiltration is the taking private information public that can be used against a party,
+this is unilateral action that can be taken that disturbs the nash equlibrium.
+we can see the cat and mouse game of security that creates a temporal barrier.
+introspection can be see as involving obserability improving behaviours that collect intelligence
+on a target. We want to modify existing software to surface information in a standardized manner.
+We can consider this to be intelligence gathering or observability enginnering.
+Open source software can be modified to expose internal information that the authors
+did not indend for being exposed.
+This is the freedom of usage for any purposes clause of the free software licenses that the
+free software foundation and others do not like to talk about.
+Novel usages of the software to increase observability and reuse of the software
+as a tool for knowledge extraction that is what I consider introspection.

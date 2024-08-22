@@ -1,5 +1,5 @@
 fn main() {
-let results = &[
+let _results = &[
  tools::find_array(0,0,"r","r__0_0", &[
    tools::find_object(1,"r__0_0","psig","desc","r__0_0__psig_desc_1",&[
      tools::find_array(2,0,"r__0_0__psig_desc_1","r__0_0__psig_desc_1__2_0", &[
