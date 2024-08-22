@@ -1,5 +1,5 @@
 extern crate serde_json;
-
+use std::env;
 use serde_json::Value;
 use std::fs::File;
 
@@ -87,11 +87,14 @@ fn top_level_search(item: &Value, depth: usize, inname: &str) {
 }
 
 fn main() {
-    let json_schema: Value = serde_json::from_reader(File::open("parsetree.mli.sig.json").unwrap()).unwrap();
-    println!("fn main() {{");
-    println!("let results = &[");
-    top_level_search(&json_schema,0,"r");
-    println!("].to_vec();");
-    println!("}}");
-    
+    for argument in env::args_os().skip(1) {
+	let json_file_path = argument;
+	let s = json_file_path.into_string().unwrap();
+	let json_data: Value = serde_json::from_reader(File::open(s).unwrap()).unwrap();
+	println!("fn main() {{");
+	println!("let results = &[");
+	top_level_search(&json_data,0,"r");
+	println!("].to_vec();");
+	println!("}}");
+    }
 }
