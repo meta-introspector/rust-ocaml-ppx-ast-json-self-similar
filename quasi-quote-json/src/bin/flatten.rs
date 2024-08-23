@@ -66,14 +66,14 @@ fn top_level_search(item: &Value, depth: usize, inname: &str) -> Result<(),Box<d
         for (i,item) in arr.into_iter().enumerate() {
 	    let indent = "  ".repeat(depth);
 	    let varname_item = format!("{}__{}_{}",inname,depth,i);	    
-	    println!("{} tools::find_array({},{},\"{}\",\"{}\", &[",
-		     indent,
-		     depth,
-		     i,
-		     inname,
-		     varname_item);
+	    //println!("{} tools::find_array({},{},\"{}\",\"{}\", &[",
+	    //indent,
+	    //	     depth,
+	    ///	     i,
+	    //	     inname,
+	    //	     varname_item);
 	    let _ = top_level_search(item, depth + 1, &varname_item);
-	    println!("{} tools::end_array() ].to_vec()),",indent);
+	    //println!("{} tools::end_array() ].to_vec()),",indent);
 	}
     }    
     if let Value::Object(obj) = &item {
@@ -84,13 +84,12 @@ fn top_level_search(item: &Value, depth: usize, inname: &str) -> Result<(),Box<d
 		let indent = "  ".repeat(depth);
 		let parts  = k.split("_").take(2).collect::<Vec<&str>>();
 	        let outname = format!("{}__{}_{}_{}",inname,parts[0],parts[1],depth);
-		println!("{} tools::find_object({},\"{}\",\"{}\",\"{}\",\"{}\",&[",indent,depth,inname,parts[0],parts[1],&outname);
+		//println!("{} tools::find_object({},\"{}\",\"{}\",\"{}\",\"{}\",&[",indent,depth,inname,parts[0],parts[1],&outname);
 		let _ = top_level_search(value, depth +1,&outname);
 		let mut flat_value: Value = json!({});
 		let _ = flatten(value, &mut flat_value, None, true);
-		io::stdout().write_all(serde_json::to_string(&flat_value)?.as_bytes())?;
-		
-		println!("{} tools::end_object() ].to_vec()),",indent);
+		println!("{}",serde_json::to_string_pretty(&flat_value).unwrap());		
+		//println!("{} tools::end_object() ].to_vec()),",indent);
 	    }
 	}
     }
@@ -102,10 +101,10 @@ fn main() {
 	let json_file_path = argument;
 	let s = json_file_path.into_string().unwrap();
 	let json_data: Value = serde_json::from_reader(File::open(s).unwrap()).unwrap();
-	println!("fn main() {{");
-	println!("let results = &[");
+	//println!("fn main() {{");
+	//println!("let results = &[");
 	let _ = top_level_search(&json_data,0,"r");
-	println!("].to_vec();");
-	println!("}}");
+	//println!("].to_vec();");
+	//println!("}}");
     }
 }
