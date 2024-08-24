@@ -1,0 +1,135 @@
+
+* command
+
+~/2024/08/20/self-similar/ocaml-rust-unification$
+
+** grep
+
+grep -i sig ~/2024/08/20/self-similar/quasi-quote-json/flatten.report
+
+      1   ".0.attr_payload.1.0.pstr_desc.1.pexp_desc.1.1": " [sig ... end] ",
+      1   ".0.attr_payload.1.0.pstr_desc.1.pexp_desc.1.1": " [: SIG] in an attribute or an extension point ",
+      1   ".0.attr_payload.1.0.pstr_desc.1.pexp_desc.1.1": " Values of type [class_signature] represents:\n    - [object('selfpat) ... end]\n    - [object ... end] when {{!class_signature.pcsig_self}[pcsig_self]}\n                         is {{!core_type_desc.Ptyp_any}[Ptyp_any]}\n",
+      1   ".0.attr_payload.1.0.pstr_desc.1.pexp_desc.1.1": " [with module type X.Y := sig end] ",
+      1   ".0": "Psig_open",
+      1   ".1.0.pcd_name.txt2": "Psig_value",
+      1   ".1.0.pld_name.txt2": "pcsig_self",
+      1   ".1.0.pld_name.txt2": "psig_desc",
+      1   ".1.0.pld_type.ptyp_desc.1": "signature_item_desc",
+      1   ".1.0.pstr_desc.1.pexp_desc.1.1": " [sig ... end] ",
+      1   ".1.0.pstr_desc.1.pexp_desc.1.1": " [: SIG] in an attribute or an extension point ",
+      1   ".1.0.pstr_desc.1.pexp_desc.1.1": " Values of type [class_signature] represents:\n    - [object('selfpat) ... end]\n    - [object ... end] when {{!class_signature.pcsig_self}[pcsig_self]}\n                         is {{!core_type_desc.Ptyp_any}[Ptyp_any]}\n",
+      1   ".1.0.pstr_desc.1.pexp_desc.1.1": " [with module type X.Y := sig end] ",
+      1   ".1.0.ptyp_desc.1": "class_signature",
+      1   ".1.10.pcd_name.txt2": "Psig_open",
+      1   ".1.11.pcd_name.txt2": "Psig_include",
+      1   ".1.12.pcd_name.txt2": "Psig_class",
+      1   ".1.13.pcd_name.txt2": "Psig_class_type",
+      1   ".1.14.pcd_name.txt2": "Psig_attribute",
+      1   ".1.15.pcd_name.txt2": "Psig_extension",
+      1   ".1.1.pcd_args.1.0.ptyp_desc.1": "class_signature",
+      1   ".1.1.pcd_attributes.0.attr_payload.1.0.pstr_desc.1.pexp_desc.1.1": " [sig ... end] ",
+      1   ".1.1.pcd_attributes.0.attr_payload.1.0.pstr_desc.1.pexp_desc.1.1": " [: SIG] in an attribute or an extension point ",
+      1   ".1.1.pcd_name.txt2": "Pcty_signature",
+      1   ".1.1.pcd_name.txt2": "Pmty_signature",
+      1   ".1.1.pcd_name.txt2": "PSig",
+      1   ".1.1.pcd_name.txt2": "Psig_type",
+      1   ".1.1.pld_name.txt2": "pcsig_fields",
+      1   ".1.1.pld_name.txt2": "psig_loc",
+      1   ".1.1": " [sig ... end] ",
+      1   ".1.1": " [: SIG] in an attribute or an extension point ",
+      1   ".1.1": " Values of type [class_signature] represents:\n    - [object('selfpat) ... end]\n    - [object ... end] when {{!class_signature.pcsig_self}[pcsig_self]}\n                         is {{!core_type_desc.Ptyp_any}[Ptyp_any]}\n",
+      1   ".1.1": " [with module type X.Y := sig end] ",
+      1   ".1.2.pcd_name.txt2": "Psig_typesubst",
+      1   ".1.3.pcd_attributes.0.attr_payload.1.0.pstr_desc.1.pexp_desc.1.1": " [with module type X.Y := sig end] ",
+      1   ".1.3.pcd_name.txt2": "Psig_typext",
+      1   ".1.4.pcd_name.txt2": "Psig_exception",
+      1   ".1.5.pcd_name.txt2": "Psig_module",
+      1   ".1.6.pcd_name.txt2": "Psig_modsubst",
+      1   ".1.7.pcd_name.txt2": "Psig_recmodule",
+      1   ".1.8.pcd_name.txt2": "Psig_modtype",
+      1   ".1.9.pcd_name.txt2": "Psig_modtypesubst",
+      1   ".1": "class_signature"
+      1   ".1.pexp_desc.1.1": " [sig ... end] ",
+      1   ".1.pexp_desc.1.1": " [: SIG] in an attribute or an extension point ",
+      1   ".1.pexp_desc.1.1": " Values of type [class_signature] represents:\n    - [object('selfpat) ... end]\n    - [object ... end] when {{!class_signature.pcsig_self}[pcsig_self]}\n                         is {{!core_type_desc.Ptyp_any}[Ptyp_any]}\n",
+      1   ".1.pexp_desc.1.1": " [with module type X.Y := sig end] ",
+      1   ".1": "signature_item"
+      1   ".1": "signature_item_desc"
+      1   ".2.0.ptyp_desc.1": "signature_item",
+      1   ".2.33.ptype_kind.1.1.pcd_args.1.0.ptyp_desc.1": "class_signature",
+      1   ".2.33.ptype_kind.1.1.pcd_name.txt2": "Pcty_signature",
+      1   ".2.34.ptype_attributes.0.attr_payload.1.0.pstr_desc.1.pexp_desc.1.1": " Values of type [class_signature] represents:\n    - [object('selfpat) ... end]\n    - [object ... end] when {{!class_signature.pcsig_self}[pcsig_self]}\n                         is {{!core_type_desc.Ptyp_any}[Ptyp_any]}\n",
+      1   ".2.34.ptype_kind.1.0.pld_name.txt2": "pcsig_self",
+      1   ".2.34.ptype_kind.1.1.pld_name.txt2": "pcsig_fields",
+      1   ".2.34.ptype_name.txt2": "class_signature",
+      1   ".2.3.ptype_kind.1.1.pcd_args.1.0.ptyp_desc.1": "signature",
+      1   ".2.3.ptype_kind.1.1.pcd_attributes.0.attr_payload.1.0.pstr_desc.1.pexp_desc.1.1": " [: SIG] in an attribute or an extension point ",
+      1   ".2.3.ptype_kind.1.1.pcd_name.txt2": "PSig",
+      1   ".2.48.ptype_kind.1.1.pcd_args.1.0.ptyp_desc.1": "signature",
+      1   ".2.48.ptype_kind.1.1.pcd_attributes.0.attr_payload.1.0.pstr_desc.1.pexp_desc.1.1": " [sig ... end] ",
+      1   ".2.48.ptype_kind.1.1.pcd_name.txt2": "Pmty_signature",
+      1   ".2.50.ptype_manifest.ptyp_desc.2.0.ptyp_desc.1": "signature_item",
+      1   ".2.50.ptype_name.txt2": "signature",
+      1   ".2.51.ptype_kind.1.0.pld_name.txt2": "psig_desc",
+      1   ".2.51.ptype_kind.1.0.pld_type.ptyp_desc.1": "signature_item_desc",
+      1   ".2.51.ptype_kind.1.1.pld_name.txt2": "psig_loc",
+      1   ".2.51.ptype_name.txt2": "signature_item",
+      1   ".2.52.ptype_kind.1.0.pcd_name.txt2": "Psig_value",
+      1   ".2.52.ptype_kind.1.10.pcd_name.txt2": "Psig_open",
+      1   ".2.52.ptype_kind.1.11.pcd_name.txt2": "Psig_include",
+      1   ".2.52.ptype_kind.1.12.pcd_name.txt2": "Psig_class",
+      1   ".2.52.ptype_kind.1.13.pcd_name.txt2": "Psig_class_type",
+      1   ".2.52.ptype_kind.1.14.pcd_name.txt2": "Psig_attribute",
+      1   ".2.52.ptype_kind.1.15.pcd_name.txt2": "Psig_extension",
+      1   ".2.52.ptype_kind.1.1.pcd_name.txt2": "Psig_type",
+      1   ".2.52.ptype_kind.1.2.pcd_name.txt2": "Psig_typesubst",
+      1   ".2.52.ptype_kind.1.3.pcd_name.txt2": "Psig_typext",
+      1   ".2.52.ptype_kind.1.4.pcd_name.txt2": "Psig_exception",
+      1   ".2.52.ptype_kind.1.5.pcd_name.txt2": "Psig_module",
+      1   ".2.52.ptype_kind.1.6.pcd_name.txt2": "Psig_modsubst",
+      1   ".2.52.ptype_kind.1.7.pcd_name.txt2": "Psig_recmodule",
+      1   ".2.52.ptype_kind.1.8.pcd_name.txt2": "Psig_modtype",
+      1   ".2.52.ptype_kind.1.9.pcd_name.txt2": "Psig_modtypesubst",
+      1   ".2.52.ptype_name.txt2": "signature_item_desc",
+      1   ".2.62.ptype_kind.1.3.pcd_attributes.0.attr_payload.1.0.pstr_desc.1.pexp_desc.1.1": " [with module type X.Y := sig end] ",
+      1   "ptyp_desc.1": "signature_item_desc",
+      1   "ptyp_desc.2.0.ptyp_desc.1": "signature_item",
+      1   "txt2": "class_signature"
+      1   "txt2": "pcsig_fields"
+      1   "txt2": "pcsig_self"
+      1   "txt2": "Pcty_signature"
+      1   "txt2": "Pmty_signature"
+      1   "txt2": "PSig"
+      1   "txt2": "Psig_attribute"
+      1   "txt2": "Psig_class"
+      1   "txt2": "Psig_class_type"
+      1   "txt2": "psig_desc"
+      1   "txt2": "Psig_exception"
+      1   "txt2": "Psig_extension"
+      1   "txt2": "Psig_include"
+      1   "txt2": "psig_loc"
+      1   "txt2": "Psig_modsubst"
+      1   "txt2": "Psig_modtype"
+      1   "txt2": "Psig_modtypesubst"
+      1   "txt2": "Psig_module"
+      1   "txt2": "Psig_open"
+      1   "txt2": "Psig_recmodule"
+      1   "txt2": "Psig_type"
+      1   "txt2": "Psig_typesubst"
+      1   "txt2": "Psig_typext"
+      1   "txt2": "Psig_value"
+      1   "txt2": "signature"
+      1   "txt2": "signature_item"
+      1   "txt2": "signature_item_desc"
+      2   ".1.0.ptyp_desc.1": "signature",
+      2   ".1.1.pcd_args.1.0.ptyp_desc.1": "signature",
+      2   ".1": "signature"
+      4   ".0": "Psig_attribute",
+      4   ".0": "Psig_type",
+
+
+* instances 
+      4   ".0": "Psig_attribute",
+      4   ".0": "Psig_type",
+      1   ".0": "Psig_open",
