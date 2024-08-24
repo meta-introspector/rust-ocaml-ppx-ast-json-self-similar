@@ -240,8 +240,22 @@ enum SignatureItemDesc {
     PsigNone,
 }
 
-/////////////////////
+
+
 ///////////////// implementation
+fn decode_psig_type<A>(mut _seq: A) -> SignatureItemDesc {
+    SignatureItemDesc::PsigNone
+}
+
+fn decode_psig_open<A>(mut _seq: A) -> SignatureItemDesc {
+    //(mut seq: A) -> Result(SignatureItemDesc,A::Error) {
+    SignatureItemDesc::PsigNone
+}
+
+fn decode_psig_attribute<A>(mut _seq: A) -> SignatureItemDesc {
+    //(mut seq: A) -> Result(SignatureItemDesc,A::Error) {
+    SignatureItemDesc::PsigNone
+}
 
 struct SignatureItemDescVisitor;
 
@@ -257,21 +271,43 @@ impl<'de> Visitor<'de> for SignatureItemDescVisitor {
     {
         let v = seq.next_element::<serde_json::Value>();
 	match v {
-	    Ok(Some(a)) => println!("TEST seq 1 {:?}",a),
-	    Ok(None) => println!("TEST seq none"),
-	    Err(e) =>println!("err seq 1 {:?}",e),
+	    Ok(Some(a)) => {
+		println!("TEST seq 1 {:?}",a);
+		match a.as_str() {
+		    Some("Psig_type") => {
+			println!("psig type {:?}",a);
+			// // | Psig_type of rec_flag * type_declaration list
+			let _rec_flag = seq.next_element::<serde_json::Value>();
+			let _type_declaration_list = seq.next_element::<serde_json::Value>();
+			return Ok(decode_psig_type(seq));
+		    },
+		    Some("Psig_open") => {
+			println!("Psig open {:?}",a);
+			// //| Psig_open of open_description  (** [open X] *)
+			let _open_description = seq.next_element::<serde_json::Value>();
+			return Ok(decode_psig_open(seq));
+		    },		    
+		    Some("Psig_attribute") => {
+			println!("psig attribute {:?}",a);
+			// //| Psig_attribute of attribute  (** [[\@\@\@id]] *)
+			let _attribute = seq.next_element::<serde_json::Value>();
+			return Ok(decode_psig_attribute(seq));
+		    }
+		    _ => {
+			println!("TEST OTHER {:?}",a);
+			return Ok(SignatureItemDesc::PsigNone);
+		    }
+		}
+	    },
+	    Ok(None) => {
+		println!("TEST seq none");
+		return Ok(SignatureItemDesc::PsigNone);
+	    },
+	    Err(e) =>{
+		println!("err seq 1 {:?}",e);
+		return Ok(SignatureItemDesc::PsigNone);
+	    }
 	}
-	// now lets try for the next
-	let v2 = seq.next_element::<serde_json::Value>();
-	match v2 {
-	    Ok(Some(a)) => println!("TEST seq 2 {:?}",a),
-	    Ok(None) => println!("TEST seq 2 none"),
-	    Err(e) =>println!("err seq 2 {:?}",e),
-	}
-	//println!("TEST seq {:?}",v);
-	
-        //Err(Error::invalid_type(Unexpected::Seq, &self))
-	Ok(SignatureItemDesc::PsigNone)
     }
 }
 
