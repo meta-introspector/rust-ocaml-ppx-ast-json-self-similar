@@ -194,7 +194,7 @@ pub struct SignatureItem {
     // psig
     #[serde(rename = "psig_desc")]
     #[serde(deserialize_with = "deserialize::deserialize_signature_item")]
-    desc: SignatureItemDesc,
+    desc: SignatureItemDesc,  
 //    location: Location,
 }
 
