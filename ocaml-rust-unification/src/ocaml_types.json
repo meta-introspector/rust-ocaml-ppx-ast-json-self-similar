@@ -1,0 +1,4210 @@
+{
+  "shebang": null,
+  "attrs": [],
+  "items": [
+    {
+      "Mod": {
+        "attrs": [],
+        "vis": "Inherited",
+        "unsafety": null,
+        "mod_token": {},
+        "content": null,
+        "semi": {}
+      }
+    },
+    {
+      "Mod": {
+        "attrs": [],
+        "vis": "Inherited",
+        "unsafety": null,
+        "mod_token": {},
+        "content": null,
+        "semi": {}
+      }
+    },
+    {
+      "Enum": {
+        "attrs": [
+          {
+            "pound_token": {},
+            "style": "Outer",
+            "bracket_token": {},
+            "meta": {
+              "List": {
+                "delimiter": {
+                  "Paren": {}
+                }
+              }
+            }
+          }
+        ],
+        "vis": {
+          "Public": {}
+        },
+        "enum_token": {},
+        "generics": {
+          "lt_token": null,
+          "params": {
+            "inner": [],
+            "last": null
+          },
+          "gt_token": null,
+          "where_clause": null
+        },
+        "brace_token": {},
+        "variants": {
+          "inner": [
+            [
+              {
+                "attrs": [],
+                "fields": {
+                  "Unnamed": {
+                    "paren_token": {},
+                    "unnamed": {
+                      "inner": [],
+                      "last": {
+                        "attrs": [],
+                        "vis": "Inherited",
+                        "mutability": "None",
+                        "colon_token": null,
+                        "ty": {
+                          "Path": {
+                            "qself": null,
+                            "path": {
+                              "leading_colon": null,
+                              "segments": {
+                                "inner": [],
+                                "last": {
+                                  "arguments": "None"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "discriminant": null
+              },
+              {}
+            ],
+            [
+              {
+                "attrs": [],
+                "fields": {
+                  "Unnamed": {
+                    "paren_token": {},
+                    "unnamed": {
+                      "inner": [
+                        [
+                          {
+                            "attrs": [],
+                            "vis": "Inherited",
+                            "mutability": "None",
+                            "colon_token": null,
+                            "ty": {
+                              "Path": {
+                                "qself": null,
+                                "path": {
+                                  "leading_colon": null,
+                                  "segments": {
+                                    "inner": [],
+                                    "last": {
+                                      "arguments": {
+                                        "AngleBracketed": {
+                                          "colon2_token": null,
+                                          "lt_token": {},
+                                          "args": {
+                                            "inner": [],
+                                            "last": {
+                                              "Type": {
+                                                "Path": {
+                                                  "qself": null,
+                                                  "path": {
+                                                    "leading_colon": null,
+                                                    "segments": {
+                                                      "inner": [],
+                                                      "last": {
+                                                        "arguments": "None"
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          },
+                                          "gt_token": {}
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          {}
+                        ]
+                      ],
+                      "last": {
+                        "attrs": [],
+                        "vis": "Inherited",
+                        "mutability": "None",
+                        "colon_token": null,
+                        "ty": {
+                          "Path": {
+                            "qself": null,
+                            "path": {
+                              "leading_colon": null,
+                              "segments": {
+                                "inner": [],
+                                "last": {
+                                  "arguments": "None"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "discriminant": null
+              },
+              {}
+            ],
+            [
+              {
+                "attrs": [],
+                "fields": {
+                  "Unnamed": {
+                    "paren_token": {},
+                    "unnamed": {
+                      "inner": [
+                        [
+                          {
+                            "attrs": [],
+                            "vis": "Inherited",
+                            "mutability": "None",
+                            "colon_token": null,
+                            "ty": {
+                              "Path": {
+                                "qself": null,
+                                "path": {
+                                  "leading_colon": null,
+                                  "segments": {
+                                    "inner": [],
+                                    "last": {
+                                      "arguments": {
+                                        "AngleBracketed": {
+                                          "colon2_token": null,
+                                          "lt_token": {},
+                                          "args": {
+                                            "inner": [],
+                                            "last": {
+                                              "Type": {
+                                                "Path": {
+                                                  "qself": null,
+                                                  "path": {
+                                                    "leading_colon": null,
+                                                    "segments": {
+                                                      "inner": [],
+                                                      "last": {
+                                                        "arguments": "None"
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          },
+                                          "gt_token": {}
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          {}
+                        ]
+                      ],
+                      "last": {
+                        "attrs": [],
+                        "vis": "Inherited",
+                        "mutability": "None",
+                        "colon_token": null,
+                        "ty": {
+                          "Path": {
+                            "qself": null,
+                            "path": {
+                              "leading_colon": null,
+                              "segments": {
+                                "inner": [],
+                                "last": {
+                                  "arguments": {
+                                    "AngleBracketed": {
+                                      "colon2_token": null,
+                                      "lt_token": {},
+                                      "args": {
+                                        "inner": [],
+                                        "last": {
+                                          "Type": {
+                                            "Path": {
+                                              "qself": null,
+                                              "path": {
+                                                "leading_colon": null,
+                                                "segments": {
+                                                  "inner": [],
+                                                  "last": {
+                                                    "arguments": "None"
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      },
+                                      "gt_token": {}
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "discriminant": null
+              },
+              {}
+            ]
+          ],
+          "last": null
+        }
+      }
+    },
+    {
+      "Enum": {
+        "attrs": [
+          {
+            "pound_token": {},
+            "style": "Outer",
+            "bracket_token": {},
+            "meta": {
+              "List": {
+                "delimiter": {
+                  "Paren": {}
+                }
+              }
+            }
+          },
+          {
+            "pound_token": {},
+            "style": "Outer",
+            "bracket_token": {},
+            "meta": {
+              "List": {
+                "delimiter": {
+                  "Paren": {}
+                }
+              }
+            }
+          }
+        ],
+        "vis": {
+          "Public": {}
+        },
+        "enum_token": {},
+        "generics": {
+          "lt_token": null,
+          "params": {
+            "inner": [],
+            "last": null
+          },
+          "gt_token": null,
+          "where_clause": null
+        },
+        "brace_token": {},
+        "variants": {
+          "inner": [
+            [
+              {
+                "attrs": [],
+                "fields": {
+                  "Unnamed": {
+                    "paren_token": {},
+                    "unnamed": {
+                      "inner": [
+                        [
+                          {
+                            "attrs": [],
+                            "vis": "Inherited",
+                            "mutability": "None",
+                            "colon_token": null,
+                            "ty": {
+                              "Path": {
+                                "qself": null,
+                                "path": {
+                                  "leading_colon": null,
+                                  "segments": {
+                                    "inner": [],
+                                    "last": {
+                                      "arguments": "None"
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          {}
+                        ]
+                      ],
+                      "last": {
+                        "attrs": [],
+                        "vis": "Inherited",
+                        "mutability": "None",
+                        "colon_token": null,
+                        "ty": {
+                          "Path": {
+                            "qself": null,
+                            "path": {
+                              "leading_colon": null,
+                              "segments": {
+                                "inner": [],
+                                "last": {
+                                  "arguments": {
+                                    "AngleBracketed": {
+                                      "colon2_token": null,
+                                      "lt_token": {},
+                                      "args": {
+                                        "inner": [],
+                                        "last": {
+                                          "Type": {
+                                            "Path": {
+                                              "qself": null,
+                                              "path": {
+                                                "leading_colon": null,
+                                                "segments": {
+                                                  "inner": [],
+                                                  "last": {
+                                                    "arguments": "None"
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      },
+                                      "gt_token": {}
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "discriminant": null
+              },
+              {}
+            ]
+          ],
+          "last": {
+            "attrs": [],
+            "fields": "Unit",
+            "discriminant": null
+          }
+        }
+      }
+    },
+    {
+      "Struct": {
+        "attrs": [
+          {
+            "pound_token": {},
+            "style": "Outer",
+            "bracket_token": {},
+            "meta": {
+              "List": {
+                "delimiter": {
+                  "Paren": {}
+                }
+              }
+            }
+          },
+          {
+            "pound_token": {},
+            "style": "Outer",
+            "bracket_token": {},
+            "meta": {
+              "List": {
+                "delimiter": {
+                  "Paren": {}
+                }
+              }
+            }
+          }
+        ],
+        "vis": "Inherited",
+        "struct_token": {},
+        "generics": {
+          "lt_token": null,
+          "params": {
+            "inner": [],
+            "last": null
+          },
+          "gt_token": null,
+          "where_clause": null
+        },
+        "fields": {
+          "Named": {
+            "brace_token": {},
+            "named": {
+              "inner": [],
+              "last": {
+                "attrs": [],
+                "vis": "Inherited",
+                "mutability": "None",
+                "colon_token": {},
+                "ty": {
+                  "Path": {
+                    "qself": null,
+                    "path": {
+                      "leading_colon": null,
+                      "segments": {
+                        "inner": [],
+                        "last": {
+                          "arguments": "None"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "semi_token": null
+      }
+    },
+    {
+      "Struct": {
+        "attrs": [
+          {
+            "pound_token": {},
+            "style": "Outer",
+            "bracket_token": {},
+            "meta": {
+              "List": {
+                "delimiter": {
+                  "Paren": {}
+                }
+              }
+            }
+          },
+          {
+            "pound_token": {},
+            "style": "Outer",
+            "bracket_token": {},
+            "meta": {
+              "List": {
+                "delimiter": {
+                  "Paren": {}
+                }
+              }
+            }
+          }
+        ],
+        "vis": {
+          "Public": {}
+        },
+        "struct_token": {},
+        "generics": {
+          "lt_token": null,
+          "params": {
+            "inner": [],
+            "last": null
+          },
+          "gt_token": null,
+          "where_clause": null
+        },
+        "fields": {
+          "Named": {
+            "brace_token": {},
+            "named": {
+              "inner": [
+                [
+                  {
+                    "attrs": [
+                      {
+                        "pound_token": {},
+                        "style": "Outer",
+                        "bracket_token": {},
+                        "meta": {
+                          "List": {
+                            "delimiter": {
+                              "Paren": {}
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "pound_token": {},
+                        "style": "Outer",
+                        "bracket_token": {},
+                        "meta": {
+                          "List": {
+                            "delimiter": {
+                              "Paren": {}
+                            }
+                          }
+                        }
+                      }
+                    ],
+                    "vis": "Inherited",
+                    "mutability": "None",
+                    "colon_token": {},
+                    "ty": {
+                      "Path": {
+                        "qself": null,
+                        "path": {
+                          "leading_colon": null,
+                          "segments": {
+                            "inner": [],
+                            "last": {
+                              "arguments": "None"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {}
+                ],
+                [
+                  {
+                    "attrs": [
+                      {
+                        "pound_token": {},
+                        "style": "Outer",
+                        "bracket_token": {},
+                        "meta": {
+                          "List": {
+                            "delimiter": {
+                              "Paren": {}
+                            }
+                          }
+                        }
+                      }
+                    ],
+                    "vis": "Inherited",
+                    "mutability": "None",
+                    "colon_token": {},
+                    "ty": {
+                      "Path": {
+                        "qself": null,
+                        "path": {
+                          "leading_colon": null,
+                          "segments": {
+                            "inner": [],
+                            "last": {
+                              "arguments": {
+                                "AngleBracketed": {
+                                  "colon2_token": null,
+                                  "lt_token": {},
+                                  "args": {
+                                    "inner": [],
+                                    "last": {
+                                      "Type": {
+                                        "Path": {
+                                          "qself": null,
+                                          "path": {
+                                            "leading_colon": null,
+                                            "segments": {
+                                              "inner": [],
+                                              "last": {
+                                                "arguments": "None"
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "gt_token": {}
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {}
+                ]
+              ],
+              "last": null
+            }
+          }
+        },
+        "semi_token": null
+      }
+    },
+    {
+      "Enum": {
+        "attrs": [
+          {
+            "pound_token": {},
+            "style": "Outer",
+            "bracket_token": {},
+            "meta": {
+              "List": {
+                "delimiter": {
+                  "Paren": {}
+                }
+              }
+            }
+          },
+          {
+            "pound_token": {},
+            "style": "Outer",
+            "bracket_token": {},
+            "meta": {
+              "List": {
+                "delimiter": {
+                  "Paren": {}
+                }
+              }
+            }
+          }
+        ],
+        "vis": {
+          "Public": {}
+        },
+        "enum_token": {},
+        "generics": {
+          "lt_token": null,
+          "params": {
+            "inner": [],
+            "last": null
+          },
+          "gt_token": null,
+          "where_clause": null
+        },
+        "brace_token": {},
+        "variants": {
+          "inner": [
+            [
+              {
+                "attrs": [],
+                "fields": {
+                  "Unnamed": {
+                    "paren_token": {},
+                    "unnamed": {
+                      "inner": [],
+                      "last": {
+                        "attrs": [],
+                        "vis": "Inherited",
+                        "mutability": "None",
+                        "colon_token": null,
+                        "ty": {
+                          "Path": {
+                            "qself": null,
+                            "path": {
+                              "leading_colon": null,
+                              "segments": {
+                                "inner": [],
+                                "last": {
+                                  "arguments": {
+                                    "AngleBracketed": {
+                                      "colon2_token": null,
+                                      "lt_token": {},
+                                      "args": {
+                                        "inner": [],
+                                        "last": {
+                                          "Type": {
+                                            "Path": {
+                                              "qself": null,
+                                              "path": {
+                                                "leading_colon": null,
+                                                "segments": {
+                                                  "inner": [],
+                                                  "last": {
+                                                    "arguments": "None"
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      },
+                                      "gt_token": {}
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "discriminant": null
+              },
+              {}
+            ],
+            [
+              {
+                "attrs": [],
+                "fields": {
+                  "Unnamed": {
+                    "paren_token": {},
+                    "unnamed": {
+                      "inner": [],
+                      "last": {
+                        "attrs": [],
+                        "vis": "Inherited",
+                        "mutability": "None",
+                        "colon_token": null,
+                        "ty": {
+                          "Path": {
+                            "qself": null,
+                            "path": {
+                              "leading_colon": null,
+                              "segments": {
+                                "inner": [],
+                                "last": {
+                                  "arguments": {
+                                    "AngleBracketed": {
+                                      "colon2_token": null,
+                                      "lt_token": {},
+                                      "args": {
+                                        "inner": [],
+                                        "last": {
+                                          "Type": {
+                                            "Path": {
+                                              "qself": null,
+                                              "path": {
+                                                "leading_colon": null,
+                                                "segments": {
+                                                  "inner": [],
+                                                  "last": {
+                                                    "arguments": "None"
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      },
+                                      "gt_token": {}
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "discriminant": null
+              },
+              {}
+            ]
+          ],
+          "last": {
+            "attrs": [],
+            "fields": "Unit",
+            "discriminant": null
+          }
+        }
+      }
+    },
+    {
+      "Struct": {
+        "attrs": [
+          {
+            "pound_token": {},
+            "style": "Outer",
+            "bracket_token": {},
+            "meta": {
+              "List": {
+                "delimiter": {
+                  "Paren": {}
+                }
+              }
+            }
+          },
+          {
+            "pound_token": {},
+            "style": "Outer",
+            "bracket_token": {},
+            "meta": {
+              "List": {
+                "delimiter": {
+                  "Paren": {}
+                }
+              }
+            }
+          }
+        ],
+        "vis": {
+          "Public": {}
+        },
+        "struct_token": {},
+        "generics": {
+          "lt_token": null,
+          "params": {
+            "inner": [],
+            "last": null
+          },
+          "gt_token": null,
+          "where_clause": null
+        },
+        "fields": {
+          "Named": {
+            "brace_token": {},
+            "named": {
+              "inner": [
+                [
+                  {
+                    "attrs": [
+                      {
+                        "pound_token": {},
+                        "style": "Outer",
+                        "bracket_token": {},
+                        "meta": {
+                          "List": {
+                            "delimiter": {
+                              "Paren": {}
+                            }
+                          }
+                        }
+                      }
+                    ],
+                    "vis": "Inherited",
+                    "mutability": "None",
+                    "colon_token": {},
+                    "ty": {
+                      "Path": {
+                        "qself": null,
+                        "path": {
+                          "leading_colon": null,
+                          "segments": {
+                            "inner": [],
+                            "last": {
+                              "arguments": "None"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {}
+                ],
+                [
+                  {
+                    "attrs": [
+                      {
+                        "pound_token": {},
+                        "style": "Outer",
+                        "bracket_token": {},
+                        "meta": {
+                          "List": {
+                            "delimiter": {
+                              "Paren": {}
+                            }
+                          }
+                        }
+                      }
+                    ],
+                    "vis": "Inherited",
+                    "mutability": "None",
+                    "colon_token": {},
+                    "ty": {
+                      "Path": {
+                        "qself": null,
+                        "path": {
+                          "leading_colon": null,
+                          "segments": {
+                            "inner": [],
+                            "last": {
+                              "arguments": {
+                                "AngleBracketed": {
+                                  "colon2_token": null,
+                                  "lt_token": {},
+                                  "args": {
+                                    "inner": [],
+                                    "last": {
+                                      "Type": {
+                                        "Path": {
+                                          "qself": null,
+                                          "path": {
+                                            "leading_colon": null,
+                                            "segments": {
+                                              "inner": [],
+                                              "last": {
+                                                "arguments": "None"
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "gt_token": {}
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {}
+                ],
+                [
+                  {
+                    "attrs": [
+                      {
+                        "pound_token": {},
+                        "style": "Outer",
+                        "bracket_token": {},
+                        "meta": {
+                          "List": {
+                            "delimiter": {
+                              "Paren": {}
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "pound_token": {},
+                        "style": "Outer",
+                        "bracket_token": {},
+                        "meta": {
+                          "List": {
+                            "delimiter": {
+                              "Paren": {}
+                            }
+                          }
+                        }
+                      }
+                    ],
+                    "vis": "Inherited",
+                    "mutability": "None",
+                    "colon_token": {},
+                    "ty": {
+                      "Path": {
+                        "qself": null,
+                        "path": {
+                          "leading_colon": null,
+                          "segments": {
+                            "inner": [],
+                            "last": {
+                              "arguments": "None"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {}
+                ],
+                [
+                  {
+                    "attrs": [
+                      {
+                        "pound_token": {},
+                        "style": "Outer",
+                        "bracket_token": {},
+                        "meta": {
+                          "List": {
+                            "delimiter": {
+                              "Paren": {}
+                            }
+                          }
+                        }
+                      }
+                    ],
+                    "vis": "Inherited",
+                    "mutability": "None",
+                    "colon_token": {},
+                    "ty": {
+                      "Path": {
+                        "qself": null,
+                        "path": {
+                          "leading_colon": null,
+                          "segments": {
+                            "inner": [],
+                            "last": {
+                              "arguments": {
+                                "AngleBracketed": {
+                                  "colon2_token": null,
+                                  "lt_token": {},
+                                  "args": {
+                                    "inner": [],
+                                    "last": {
+                                      "Type": {
+                                        "Path": {
+                                          "qself": null,
+                                          "path": {
+                                            "leading_colon": null,
+                                            "segments": {
+                                              "inner": [],
+                                              "last": {
+                                                "arguments": "None"
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "gt_token": {}
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {}
+                ],
+                [
+                  {
+                    "attrs": [
+                      {
+                        "pound_token": {},
+                        "style": "Outer",
+                        "bracket_token": {},
+                        "meta": {
+                          "List": {
+                            "delimiter": {
+                              "Paren": {}
+                            }
+                          }
+                        }
+                      }
+                    ],
+                    "vis": "Inherited",
+                    "mutability": "None",
+                    "colon_token": {},
+                    "ty": {
+                      "Path": {
+                        "qself": null,
+                        "path": {
+                          "leading_colon": null,
+                          "segments": {
+                            "inner": [],
+                            "last": {
+                              "arguments": {
+                                "AngleBracketed": {
+                                  "colon2_token": null,
+                                  "lt_token": {},
+                                  "args": {
+                                    "inner": [],
+                                    "last": {
+                                      "Type": {
+                                        "Path": {
+                                          "qself": null,
+                                          "path": {
+                                            "leading_colon": null,
+                                            "segments": {
+                                              "inner": [],
+                                              "last": {
+                                                "arguments": "None"
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "gt_token": {}
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {}
+                ]
+              ],
+              "last": null
+            }
+          }
+        },
+        "semi_token": null
+      }
+    },
+    {
+      "Enum": {
+        "attrs": [
+          {
+            "pound_token": {},
+            "style": "Outer",
+            "bracket_token": {},
+            "meta": {
+              "List": {
+                "delimiter": {
+                  "Paren": {}
+                }
+              }
+            }
+          },
+          {
+            "pound_token": {},
+            "style": "Outer",
+            "bracket_token": {},
+            "meta": {
+              "List": {
+                "delimiter": {
+                  "Paren": {}
+                }
+              }
+            }
+          }
+        ],
+        "vis": {
+          "Public": {}
+        },
+        "enum_token": {},
+        "generics": {
+          "lt_token": null,
+          "params": {
+            "inner": [],
+            "last": null
+          },
+          "gt_token": null,
+          "where_clause": null
+        },
+        "brace_token": {},
+        "variants": {
+          "inner": [
+            [
+              {
+                "attrs": [],
+                "fields": "Unit",
+                "discriminant": null
+              },
+              {}
+            ],
+            [
+              {
+                "attrs": [],
+                "fields": {
+                  "Unnamed": {
+                    "paren_token": {},
+                    "unnamed": {
+                      "inner": [],
+                      "last": {
+                        "attrs": [],
+                        "vis": "Inherited",
+                        "mutability": "None",
+                        "colon_token": null,
+                        "ty": {
+                          "Path": {
+                            "qself": null,
+                            "path": {
+                              "leading_colon": null,
+                              "segments": {
+                                "inner": [],
+                                "last": {
+                                  "arguments": {
+                                    "AngleBracketed": {
+                                      "colon2_token": null,
+                                      "lt_token": {},
+                                      "args": {
+                                        "inner": [],
+                                        "last": {
+                                          "Type": {
+                                            "Path": {
+                                              "qself": null,
+                                              "path": {
+                                                "leading_colon": null,
+                                                "segments": {
+                                                  "inner": [],
+                                                  "last": {
+                                                    "arguments": "None"
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      },
+                                      "gt_token": {}
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "discriminant": null
+              },
+              {}
+            ],
+            [
+              {
+                "attrs": [],
+                "fields": {
+                  "Unnamed": {
+                    "paren_token": {},
+                    "unnamed": {
+                      "inner": [],
+                      "last": {
+                        "attrs": [],
+                        "vis": "Inherited",
+                        "mutability": "None",
+                        "colon_token": null,
+                        "ty": {
+                          "Path": {
+                            "qself": null,
+                            "path": {
+                              "leading_colon": null,
+                              "segments": {
+                                "inner": [],
+                                "last": {
+                                  "arguments": {
+                                    "AngleBracketed": {
+                                      "colon2_token": null,
+                                      "lt_token": {},
+                                      "args": {
+                                        "inner": [],
+                                        "last": {
+                                          "Type": {
+                                            "Path": {
+                                              "qself": null,
+                                              "path": {
+                                                "leading_colon": null,
+                                                "segments": {
+                                                  "inner": [],
+                                                  "last": {
+                                                    "arguments": "None"
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      },
+                                      "gt_token": {}
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "discriminant": null
+              },
+              {}
+            ],
+            [
+              {
+                "attrs": [],
+                "fields": "Unit",
+                "discriminant": null
+              },
+              {}
+            ]
+          ],
+          "last": {
+            "attrs": [],
+            "fields": "Unit",
+            "discriminant": null
+          }
+        }
+      }
+    },
+    {
+      "Struct": {
+        "attrs": [
+          {
+            "pound_token": {},
+            "style": "Outer",
+            "bracket_token": {},
+            "meta": {
+              "List": {
+                "delimiter": {
+                  "Paren": {}
+                }
+              }
+            }
+          }
+        ],
+        "vis": {
+          "Public": {}
+        },
+        "struct_token": {},
+        "generics": {
+          "lt_token": null,
+          "params": {
+            "inner": [],
+            "last": null
+          },
+          "gt_token": null,
+          "where_clause": null
+        },
+        "fields": {
+          "Named": {
+            "brace_token": {},
+            "named": {
+              "inner": [],
+              "last": null
+            }
+          }
+        },
+        "semi_token": null
+      }
+    },
+    {
+      "Enum": {
+        "attrs": [
+          {
+            "pound_token": {},
+            "style": "Outer",
+            "bracket_token": {},
+            "meta": {
+              "List": {
+                "delimiter": {
+                  "Paren": {}
+                }
+              }
+            }
+          }
+        ],
+        "vis": {
+          "Public": {}
+        },
+        "enum_token": {},
+        "generics": {
+          "lt_token": null,
+          "params": {
+            "inner": [],
+            "last": null
+          },
+          "gt_token": null,
+          "where_clause": null
+        },
+        "brace_token": {},
+        "variants": {
+          "inner": [
+            [
+              {
+                "attrs": [],
+                "fields": "Unit",
+                "discriminant": null
+              },
+              {}
+            ],
+            [
+              {
+                "attrs": [],
+                "fields": "Unit",
+                "discriminant": null
+              },
+              {}
+            ],
+            [
+              {
+                "attrs": [],
+                "fields": "Unit",
+                "discriminant": null
+              },
+              {}
+            ]
+          ],
+          "last": null
+        }
+      }
+    },
+    {
+      "Enum": {
+        "attrs": [
+          {
+            "pound_token": {},
+            "style": "Outer",
+            "bracket_token": {},
+            "meta": {
+              "List": {
+                "delimiter": {
+                  "Paren": {}
+                }
+              }
+            }
+          }
+        ],
+        "vis": {
+          "Public": {}
+        },
+        "enum_token": {},
+        "generics": {
+          "lt_token": null,
+          "params": {
+            "inner": [],
+            "last": null
+          },
+          "gt_token": null,
+          "where_clause": null
+        },
+        "brace_token": {},
+        "variants": {
+          "inner": [
+            [
+              {
+                "attrs": [],
+                "fields": "Unit",
+                "discriminant": null
+              },
+              {}
+            ],
+            [
+              {
+                "attrs": [],
+                "fields": "Unit",
+                "discriminant": null
+              },
+              {}
+            ]
+          ],
+          "last": null
+        }
+      }
+    },
+    {
+      "Struct": {
+        "attrs": [
+          {
+            "pound_token": {},
+            "style": "Outer",
+            "bracket_token": {},
+            "meta": {
+              "List": {
+                "delimiter": {
+                  "Paren": {}
+                }
+              }
+            }
+          },
+          {
+            "pound_token": {},
+            "style": "Outer",
+            "bracket_token": {},
+            "meta": {
+              "List": {
+                "delimiter": {
+                  "Paren": {}
+                }
+              }
+            }
+          }
+        ],
+        "vis": {
+          "Public": {}
+        },
+        "struct_token": {},
+        "generics": {
+          "lt_token": null,
+          "params": {
+            "inner": [],
+            "last": null
+          },
+          "gt_token": null,
+          "where_clause": null
+        },
+        "fields": {
+          "Named": {
+            "brace_token": {},
+            "named": {
+              "inner": [
+                [
+                  {
+                    "attrs": [
+                      {
+                        "pound_token": {},
+                        "style": "Outer",
+                        "bracket_token": {},
+                        "meta": {
+                          "List": {
+                            "delimiter": {
+                              "Paren": {}
+                            }
+                          }
+                        }
+                      }
+                    ],
+                    "vis": "Inherited",
+                    "mutability": "None",
+                    "colon_token": {},
+                    "ty": {
+                      "Path": {
+                        "qself": null,
+                        "path": {
+                          "leading_colon": null,
+                          "segments": {
+                            "inner": [],
+                            "last": {
+                              "arguments": "None"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {}
+                ],
+                [
+                  {
+                    "attrs": [
+                      {
+                        "pound_token": {},
+                        "style": "Outer",
+                        "bracket_token": {},
+                        "meta": {
+                          "List": {
+                            "delimiter": {
+                              "Paren": {}
+                            }
+                          }
+                        }
+                      }
+                    ],
+                    "vis": "Inherited",
+                    "mutability": "None",
+                    "colon_token": {},
+                    "ty": {
+                      "Path": {
+                        "qself": null,
+                        "path": {
+                          "leading_colon": null,
+                          "segments": {
+                            "inner": [],
+                            "last": {
+                              "arguments": {
+                                "AngleBracketed": {
+                                  "colon2_token": null,
+                                  "lt_token": {},
+                                  "args": {
+                                    "inner": [],
+                                    "last": {
+                                      "Type": {
+                                        "Tuple": {
+                                          "paren_token": {},
+                                          "elems": {
+                                            "inner": [
+                                              [
+                                                {
+                                                  "Path": {
+                                                    "qself": null,
+                                                    "path": {
+                                                      "leading_colon": null,
+                                                      "segments": {
+                                                        "inner": [],
+                                                        "last": {
+                                                          "arguments": "None"
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                },
+                                                {}
+                                              ],
+                                              [
+                                                {
+                                                  "Path": {
+                                                    "qself": null,
+                                                    "path": {
+                                                      "leading_colon": null,
+                                                      "segments": {
+                                                        "inner": [],
+                                                        "last": {
+                                                          "arguments": "None"
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                },
+                                                {}
+                                              ]
+                                            ],
+                                            "last": {
+                                              "Path": {
+                                                "qself": null,
+                                                "path": {
+                                                  "leading_colon": null,
+                                                  "segments": {
+                                                    "inner": [],
+                                                    "last": {
+                                                      "arguments": "None"
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "gt_token": {}
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {}
+                ],
+                [
+                  {
+                    "attrs": [
+                      {
+                        "pound_token": {},
+                        "style": "Outer",
+                        "bracket_token": {},
+                        "meta": {
+                          "List": {
+                            "delimiter": {
+                              "Paren": {}
+                            }
+                          }
+                        }
+                      }
+                    ],
+                    "vis": "Inherited",
+                    "mutability": "None",
+                    "colon_token": {},
+                    "ty": {
+                      "Path": {
+                        "qself": null,
+                        "path": {
+                          "leading_colon": null,
+                          "segments": {
+                            "inner": [],
+                            "last": {
+                              "arguments": {
+                                "AngleBracketed": {
+                                  "colon2_token": null,
+                                  "lt_token": {},
+                                  "args": {
+                                    "inner": [],
+                                    "last": {
+                                      "Type": {
+                                        "Tuple": {
+                                          "paren_token": {},
+                                          "elems": {
+                                            "inner": [
+                                              [
+                                                {
+                                                  "Path": {
+                                                    "qself": null,
+                                                    "path": {
+                                                      "leading_colon": null,
+                                                      "segments": {
+                                                        "inner": [],
+                                                        "last": {
+                                                          "arguments": "None"
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                },
+                                                {}
+                                              ],
+                                              [
+                                                {
+                                                  "Path": {
+                                                    "qself": null,
+                                                    "path": {
+                                                      "leading_colon": null,
+                                                      "segments": {
+                                                        "inner": [],
+                                                        "last": {
+                                                          "arguments": "None"
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                },
+                                                {}
+                                              ]
+                                            ],
+                                            "last": {
+                                              "Path": {
+                                                "qself": null,
+                                                "path": {
+                                                  "leading_colon": null,
+                                                  "segments": {
+                                                    "inner": [],
+                                                    "last": {
+                                                      "arguments": "None"
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "gt_token": {}
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {}
+                ],
+                [
+                  {
+                    "attrs": [
+                      {
+                        "pound_token": {},
+                        "style": "Outer",
+                        "bracket_token": {},
+                        "meta": {
+                          "List": {
+                            "delimiter": {
+                              "Paren": {}
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "pound_token": {},
+                        "style": "Outer",
+                        "bracket_token": {},
+                        "meta": {
+                          "List": {
+                            "delimiter": {
+                              "Paren": {}
+                            }
+                          }
+                        }
+                      }
+                    ],
+                    "vis": "Inherited",
+                    "mutability": "None",
+                    "colon_token": {},
+                    "ty": {
+                      "Path": {
+                        "qself": null,
+                        "path": {
+                          "leading_colon": null,
+                          "segments": {
+                            "inner": [],
+                            "last": {
+                              "arguments": "None"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {}
+                ],
+                [
+                  {
+                    "attrs": [
+                      {
+                        "pound_token": {},
+                        "style": "Outer",
+                        "bracket_token": {},
+                        "meta": {
+                          "List": {
+                            "delimiter": {
+                              "Paren": {}
+                            }
+                          }
+                        }
+                      }
+                    ],
+                    "vis": "Inherited",
+                    "mutability": "None",
+                    "colon_token": {},
+                    "ty": {
+                      "Path": {
+                        "qself": null,
+                        "path": {
+                          "leading_colon": null,
+                          "segments": {
+                            "inner": [],
+                            "last": {
+                              "arguments": {
+                                "AngleBracketed": {
+                                  "colon2_token": null,
+                                  "lt_token": {},
+                                  "args": {
+                                    "inner": [],
+                                    "last": {
+                                      "Type": {
+                                        "Path": {
+                                          "qself": null,
+                                          "path": {
+                                            "leading_colon": null,
+                                            "segments": {
+                                              "inner": [],
+                                              "last": {
+                                                "arguments": "None"
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "gt_token": {}
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {}
+                ],
+                [
+                  {
+                    "attrs": [
+                      {
+                        "pound_token": {},
+                        "style": "Outer",
+                        "bracket_token": {},
+                        "meta": {
+                          "List": {
+                            "delimiter": {
+                              "Paren": {}
+                            }
+                          }
+                        }
+                      }
+                    ],
+                    "vis": "Inherited",
+                    "mutability": "None",
+                    "colon_token": {},
+                    "ty": {
+                      "Path": {
+                        "qself": null,
+                        "path": {
+                          "leading_colon": null,
+                          "segments": {
+                            "inner": [],
+                            "last": {
+                              "arguments": {
+                                "AngleBracketed": {
+                                  "colon2_token": null,
+                                  "lt_token": {},
+                                  "args": {
+                                    "inner": [],
+                                    "last": {
+                                      "Type": {
+                                        "Path": {
+                                          "qself": null,
+                                          "path": {
+                                            "leading_colon": null,
+                                            "segments": {
+                                              "inner": [],
+                                              "last": {
+                                                "arguments": "None"
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "gt_token": {}
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {}
+                ]
+              ],
+              "last": null
+            }
+          }
+        },
+        "semi_token": null
+      }
+    },
+    {
+      "Enum": {
+        "attrs": [
+          {
+            "pound_token": {},
+            "style": "Outer",
+            "bracket_token": {},
+            "meta": {
+              "List": {
+                "delimiter": {
+                  "Paren": {}
+                }
+              }
+            }
+          }
+        ],
+        "vis": {
+          "Public": {}
+        },
+        "enum_token": {},
+        "generics": {
+          "lt_token": null,
+          "params": {
+            "inner": [],
+            "last": null
+          },
+          "gt_token": null,
+          "where_clause": null
+        },
+        "brace_token": {},
+        "variants": {
+          "inner": [
+            [
+              {
+                "attrs": [],
+                "fields": "Unit",
+                "discriminant": null
+              },
+              {}
+            ],
+            [
+              {
+                "attrs": [],
+                "fields": "Unit",
+                "discriminant": null
+              },
+              {}
+            ]
+          ],
+          "last": null
+        }
+      }
+    },
+    {
+      "Struct": {
+        "attrs": [
+          {
+            "pound_token": {},
+            "style": "Outer",
+            "bracket_token": {},
+            "meta": {
+              "List": {
+                "delimiter": {
+                  "Paren": {}
+                }
+              }
+            }
+          },
+          {
+            "pound_token": {},
+            "style": "Outer",
+            "bracket_token": {},
+            "meta": {
+              "List": {
+                "delimiter": {
+                  "Paren": {}
+                }
+              }
+            }
+          }
+        ],
+        "vis": {
+          "Public": {}
+        },
+        "struct_token": {},
+        "generics": {
+          "lt_token": null,
+          "params": {
+            "inner": [],
+            "last": null
+          },
+          "gt_token": null,
+          "where_clause": null
+        },
+        "fields": {
+          "Named": {
+            "brace_token": {},
+            "named": {
+              "inner": [
+                [
+                  {
+                    "attrs": [
+                      {
+                        "pound_token": {},
+                        "style": "Outer",
+                        "bracket_token": {},
+                        "meta": {
+                          "List": {
+                            "delimiter": {
+                              "Paren": {}
+                            }
+                          }
+                        }
+                      }
+                    ],
+                    "vis": "Inherited",
+                    "mutability": "None",
+                    "colon_token": {},
+                    "ty": {
+                      "Path": {
+                        "qself": null,
+                        "path": {
+                          "leading_colon": null,
+                          "segments": {
+                            "inner": [],
+                            "last": {
+                              "arguments": "None"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {}
+                ],
+                [
+                  {
+                    "attrs": [
+                      {
+                        "pound_token": {},
+                        "style": "Outer",
+                        "bracket_token": {},
+                        "meta": {
+                          "List": {
+                            "delimiter": {
+                              "Paren": {}
+                            }
+                          }
+                        }
+                      }
+                    ],
+                    "vis": "Inherited",
+                    "mutability": "None",
+                    "colon_token": {},
+                    "ty": {
+                      "Path": {
+                        "qself": null,
+                        "path": {
+                          "leading_colon": null,
+                          "segments": {
+                            "inner": [],
+                            "last": {
+                              "arguments": {
+                                "AngleBracketed": {
+                                  "colon2_token": null,
+                                  "lt_token": {},
+                                  "args": {
+                                    "inner": [],
+                                    "last": {
+                                      "Type": {
+                                        "Path": {
+                                          "qself": null,
+                                          "path": {
+                                            "leading_colon": null,
+                                            "segments": {
+                                              "inner": [],
+                                              "last": {
+                                                "arguments": "None"
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "gt_token": {}
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {}
+                ],
+                [
+                  {
+                    "attrs": [
+                      {
+                        "pound_token": {},
+                        "style": "Outer",
+                        "bracket_token": {},
+                        "meta": {
+                          "List": {
+                            "delimiter": {
+                              "Paren": {}
+                            }
+                          }
+                        }
+                      }
+                    ],
+                    "vis": "Inherited",
+                    "mutability": "None",
+                    "colon_token": {},
+                    "ty": {
+                      "Path": {
+                        "qself": null,
+                        "path": {
+                          "leading_colon": null,
+                          "segments": {
+                            "inner": [],
+                            "last": {
+                              "arguments": "None"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {}
+                ],
+                [
+                  {
+                    "attrs": [
+                      {
+                        "pound_token": {},
+                        "style": "Outer",
+                        "bracket_token": {},
+                        "meta": {
+                          "List": {
+                            "delimiter": {
+                              "Paren": {}
+                            }
+                          }
+                        }
+                      }
+                    ],
+                    "vis": "Inherited",
+                    "mutability": "None",
+                    "colon_token": {},
+                    "ty": {
+                      "Path": {
+                        "qself": null,
+                        "path": {
+                          "leading_colon": null,
+                          "segments": {
+                            "inner": [],
+                            "last": {
+                              "arguments": {
+                                "AngleBracketed": {
+                                  "colon2_token": null,
+                                  "lt_token": {},
+                                  "args": {
+                                    "inner": [],
+                                    "last": {
+                                      "Type": {
+                                        "Path": {
+                                          "qself": null,
+                                          "path": {
+                                            "leading_colon": null,
+                                            "segments": {
+                                              "inner": [],
+                                              "last": {
+                                                "arguments": "None"
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "gt_token": {}
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {}
+                ]
+              ],
+              "last": null
+            }
+          }
+        },
+        "semi_token": null
+      }
+    },
+    {
+      "Struct": {
+        "attrs": [
+          {
+            "pound_token": {},
+            "style": "Outer",
+            "bracket_token": {},
+            "meta": {
+              "List": {
+                "delimiter": {
+                  "Paren": {}
+                }
+              }
+            }
+          },
+          {
+            "pound_token": {},
+            "style": "Outer",
+            "bracket_token": {},
+            "meta": {
+              "List": {
+                "delimiter": {
+                  "Paren": {}
+                }
+              }
+            }
+          }
+        ],
+        "vis": {
+          "Public": {}
+        },
+        "struct_token": {},
+        "generics": {
+          "lt_token": null,
+          "params": {
+            "inner": [],
+            "last": null
+          },
+          "gt_token": null,
+          "where_clause": null
+        },
+        "fields": {
+          "Named": {
+            "brace_token": {},
+            "named": {
+              "inner": [
+                [
+                  {
+                    "attrs": [
+                      {
+                        "pound_token": {},
+                        "style": "Outer",
+                        "bracket_token": {},
+                        "meta": {
+                          "List": {
+                            "delimiter": {
+                              "Paren": {}
+                            }
+                          }
+                        }
+                      }
+                    ],
+                    "vis": "Inherited",
+                    "mutability": "None",
+                    "colon_token": {},
+                    "ty": {
+                      "Path": {
+                        "qself": null,
+                        "path": {
+                          "leading_colon": null,
+                          "segments": {
+                            "inner": [],
+                            "last": {
+                              "arguments": "None"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {}
+                ]
+              ],
+              "last": null
+            }
+          }
+        },
+        "semi_token": null
+      }
+    },
+    {
+      "Enum": {
+        "attrs": [
+          {
+            "pound_token": {},
+            "style": "Outer",
+            "bracket_token": {},
+            "meta": {
+              "List": {
+                "delimiter": {
+                  "Paren": {}
+                }
+              }
+            }
+          },
+          {
+            "pound_token": {},
+            "style": "Outer",
+            "bracket_token": {},
+            "meta": {
+              "List": {
+                "delimiter": {
+                  "Paren": {}
+                }
+              }
+            }
+          }
+        ],
+        "vis": {
+          "Public": {}
+        },
+        "enum_token": {},
+        "generics": {
+          "lt_token": null,
+          "params": {
+            "inner": [],
+            "last": null
+          },
+          "gt_token": null,
+          "where_clause": null
+        },
+        "brace_token": {},
+        "variants": {
+          "inner": [
+            [
+              {
+                "attrs": [],
+                "fields": {
+                  "Unnamed": {
+                    "paren_token": {},
+                    "unnamed": {
+                      "inner": [
+                        [
+                          {
+                            "attrs": [],
+                            "vis": "Inherited",
+                            "mutability": "None",
+                            "colon_token": null,
+                            "ty": {
+                              "Path": {
+                                "qself": null,
+                                "path": {
+                                  "leading_colon": null,
+                                  "segments": {
+                                    "inner": [],
+                                    "last": {
+                                      "arguments": "None"
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          {}
+                        ]
+                      ],
+                      "last": {
+                        "attrs": [],
+                        "vis": "Inherited",
+                        "mutability": "None",
+                        "colon_token": null,
+                        "ty": {
+                          "Path": {
+                            "qself": null,
+                            "path": {
+                              "leading_colon": null,
+                              "segments": {
+                                "inner": [],
+                                "last": {
+                                  "arguments": {
+                                    "AngleBracketed": {
+                                      "colon2_token": null,
+                                      "lt_token": {},
+                                      "args": {
+                                        "inner": [],
+                                        "last": {
+                                          "Type": {
+                                            "Path": {
+                                              "qself": null,
+                                              "path": {
+                                                "leading_colon": null,
+                                                "segments": {
+                                                  "inner": [],
+                                                  "last": {
+                                                    "arguments": "None"
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      },
+                                      "gt_token": {}
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "discriminant": null
+              },
+              {}
+            ]
+          ],
+          "last": null
+        }
+      }
+    },
+    {
+      "Struct": {
+        "attrs": [
+          {
+            "pound_token": {},
+            "style": "Outer",
+            "bracket_token": {},
+            "meta": {
+              "List": {
+                "delimiter": {
+                  "Paren": {}
+                }
+              }
+            }
+          },
+          {
+            "pound_token": {},
+            "style": "Outer",
+            "bracket_token": {},
+            "meta": {
+              "List": {
+                "delimiter": {
+                  "Paren": {}
+                }
+              }
+            }
+          }
+        ],
+        "vis": {
+          "Public": {}
+        },
+        "struct_token": {},
+        "generics": {
+          "lt_token": null,
+          "params": {
+            "inner": [],
+            "last": null
+          },
+          "gt_token": null,
+          "where_clause": null
+        },
+        "fields": {
+          "Named": {
+            "brace_token": {},
+            "named": {
+              "inner": [
+                [
+                  {
+                    "attrs": [
+                      {
+                        "pound_token": {},
+                        "style": "Outer",
+                        "bracket_token": {},
+                        "meta": {
+                          "List": {
+                            "delimiter": {
+                              "Paren": {}
+                            }
+                          }
+                        }
+                      }
+                    ],
+                    "vis": "Inherited",
+                    "mutability": "None",
+                    "colon_token": {},
+                    "ty": {
+                      "Path": {
+                        "qself": null,
+                        "path": {
+                          "leading_colon": null,
+                          "segments": {
+                            "inner": [],
+                            "last": {
+                              "arguments": "None"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {}
+                ],
+                [
+                  {
+                    "attrs": [
+                      {
+                        "pound_token": {},
+                        "style": "Outer",
+                        "bracket_token": {},
+                        "meta": {
+                          "List": {
+                            "delimiter": {
+                              "Paren": {}
+                            }
+                          }
+                        }
+                      }
+                    ],
+                    "vis": "Inherited",
+                    "mutability": "None",
+                    "colon_token": {},
+                    "ty": {
+                      "Path": {
+                        "qself": null,
+                        "path": {
+                          "leading_colon": null,
+                          "segments": {
+                            "inner": [],
+                            "last": {
+                              "arguments": {
+                                "AngleBracketed": {
+                                  "colon2_token": null,
+                                  "lt_token": {},
+                                  "args": {
+                                    "inner": [],
+                                    "last": {
+                                      "Type": {
+                                        "Path": {
+                                          "qself": null,
+                                          "path": {
+                                            "leading_colon": null,
+                                            "segments": {
+                                              "inner": [],
+                                              "last": {
+                                                "arguments": "None"
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "gt_token": {}
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {}
+                ]
+              ],
+              "last": null
+            }
+          }
+        },
+        "semi_token": null
+      }
+    },
+    {
+      "Enum": {
+        "attrs": [
+          {
+            "pound_token": {},
+            "style": "Outer",
+            "bracket_token": {},
+            "meta": {
+              "List": {
+                "delimiter": {
+                  "Paren": {}
+                }
+              }
+            }
+          },
+          {
+            "pound_token": {},
+            "style": "Outer",
+            "bracket_token": {},
+            "meta": {
+              "List": {
+                "delimiter": {
+                  "Paren": {}
+                }
+              }
+            }
+          }
+        ],
+        "vis": {
+          "Public": {}
+        },
+        "enum_token": {},
+        "generics": {
+          "lt_token": null,
+          "params": {
+            "inner": [],
+            "last": null
+          },
+          "gt_token": null,
+          "where_clause": null
+        },
+        "brace_token": {},
+        "variants": {
+          "inner": [
+            [
+              {
+                "attrs": [],
+                "fields": {
+                  "Unnamed": {
+                    "paren_token": {},
+                    "unnamed": {
+                      "inner": [],
+                      "last": {
+                        "attrs": [],
+                        "vis": "Inherited",
+                        "mutability": "None",
+                        "colon_token": null,
+                        "ty": {
+                          "Path": {
+                            "qself": null,
+                            "path": {
+                              "leading_colon": null,
+                              "segments": {
+                                "inner": [],
+                                "last": {
+                                  "arguments": "None"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "discriminant": null
+              },
+              {}
+            ]
+          ],
+          "last": null
+        }
+      }
+    },
+    {
+      "Struct": {
+        "attrs": [
+          {
+            "pound_token": {},
+            "style": "Outer",
+            "bracket_token": {},
+            "meta": {
+              "List": {
+                "delimiter": {
+                  "Paren": {}
+                }
+              }
+            }
+          },
+          {
+            "pound_token": {},
+            "style": "Outer",
+            "bracket_token": {},
+            "meta": {
+              "List": {
+                "delimiter": {
+                  "Paren": {}
+                }
+              }
+            }
+          }
+        ],
+        "vis": {
+          "Public": {}
+        },
+        "struct_token": {},
+        "generics": {
+          "lt_token": null,
+          "params": {
+            "inner": [],
+            "last": null
+          },
+          "gt_token": null,
+          "where_clause": null
+        },
+        "fields": {
+          "Named": {
+            "brace_token": {},
+            "named": {
+              "inner": [
+                [
+                  {
+                    "attrs": [
+                      {
+                        "pound_token": {},
+                        "style": "Outer",
+                        "bracket_token": {},
+                        "meta": {
+                          "List": {
+                            "delimiter": {
+                              "Paren": {}
+                            }
+                          }
+                        }
+                      }
+                    ],
+                    "vis": "Inherited",
+                    "mutability": "None",
+                    "colon_token": {},
+                    "ty": {
+                      "Path": {
+                        "qself": null,
+                        "path": {
+                          "leading_colon": null,
+                          "segments": {
+                            "inner": [],
+                            "last": {
+                              "arguments": "None"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {}
+                ],
+                [
+                  {
+                    "attrs": [],
+                    "vis": "Inherited",
+                    "mutability": "None",
+                    "colon_token": {},
+                    "ty": {
+                      "Path": {
+                        "qself": null,
+                        "path": {
+                          "leading_colon": null,
+                          "segments": {
+                            "inner": [],
+                            "last": {
+                              "arguments": "None"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {}
+                ]
+              ],
+              "last": null
+            }
+          }
+        },
+        "semi_token": null
+      }
+    },
+    {
+      "Enum": {
+        "attrs": [
+          {
+            "pound_token": {},
+            "style": "Outer",
+            "bracket_token": {},
+            "meta": {
+              "List": {
+                "delimiter": {
+                  "Paren": {}
+                }
+              }
+            }
+          },
+          {
+            "pound_token": {},
+            "style": "Outer",
+            "bracket_token": {},
+            "meta": {
+              "List": {
+                "delimiter": {
+                  "Paren": {}
+                }
+              }
+            }
+          }
+        ],
+        "vis": {
+          "Public": {}
+        },
+        "enum_token": {},
+        "generics": {
+          "lt_token": null,
+          "params": {
+            "inner": [],
+            "last": null
+          },
+          "gt_token": null,
+          "where_clause": null
+        },
+        "brace_token": {},
+        "variants": {
+          "inner": [
+            [
+              {
+                "attrs": [],
+                "fields": {
+                  "Unnamed": {
+                    "paren_token": {},
+                    "unnamed": {
+                      "inner": [
+                        [
+                          {
+                            "attrs": [],
+                            "vis": "Inherited",
+                            "mutability": "None",
+                            "colon_token": null,
+                            "ty": {
+                              "Path": {
+                                "qself": null,
+                                "path": {
+                                  "leading_colon": null,
+                                  "segments": {
+                                    "inner": [],
+                                    "last": {
+                                      "arguments": "None"
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          {}
+                        ],
+                        [
+                          {
+                            "attrs": [],
+                            "vis": "Inherited",
+                            "mutability": "None",
+                            "colon_token": null,
+                            "ty": {
+                              "Path": {
+                                "qself": null,
+                                "path": {
+                                  "leading_colon": null,
+                                  "segments": {
+                                    "inner": [],
+                                    "last": {
+                                      "arguments": "None"
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          {}
+                        ]
+                      ],
+                      "last": {
+                        "attrs": [],
+                        "vis": "Inherited",
+                        "mutability": "None",
+                        "colon_token": null,
+                        "ty": {
+                          "Path": {
+                            "qself": null,
+                            "path": {
+                              "leading_colon": null,
+                              "segments": {
+                                "inner": [],
+                                "last": {
+                                  "arguments": {
+                                    "AngleBracketed": {
+                                      "colon2_token": null,
+                                      "lt_token": {},
+                                      "args": {
+                                        "inner": [],
+                                        "last": {
+                                          "Type": {
+                                            "Path": {
+                                              "qself": null,
+                                              "path": {
+                                                "leading_colon": null,
+                                                "segments": {
+                                                  "inner": [],
+                                                  "last": {
+                                                    "arguments": "None"
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      },
+                                      "gt_token": {}
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "discriminant": null
+              },
+              {}
+            ]
+          ],
+          "last": null
+        }
+      }
+    },
+    {
+      "Type": {
+        "attrs": [],
+        "vis": {
+          "Public": {}
+        },
+        "type_token": {},
+        "generics": {
+          "lt_token": null,
+          "params": {
+            "inner": [],
+            "last": null
+          },
+          "gt_token": null,
+          "where_clause": null
+        },
+        "eq_token": {},
+        "ty": {
+          "Path": {
+            "qself": null,
+            "path": {
+              "leading_colon": null,
+              "segments": {
+                "inner": [],
+                "last": {
+                  "arguments": {
+                    "AngleBracketed": {
+                      "colon2_token": null,
+                      "lt_token": {},
+                      "args": {
+                        "inner": [],
+                        "last": {
+                          "Type": {
+                            "Path": {
+                              "qself": null,
+                              "path": {
+                                "leading_colon": null,
+                                "segments": {
+                                  "inner": [],
+                                  "last": {
+                                    "arguments": "None"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "gt_token": {}
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "semi_token": {}
+      }
+    },
+    {
+      "Type": {
+        "attrs": [],
+        "vis": {
+          "Public": {}
+        },
+        "type_token": {},
+        "generics": {
+          "lt_token": null,
+          "params": {
+            "inner": [],
+            "last": null
+          },
+          "gt_token": null,
+          "where_clause": null
+        },
+        "eq_token": {},
+        "ty": {
+          "Path": {
+            "qself": null,
+            "path": {
+              "leading_colon": null,
+              "segments": {
+                "inner": [],
+                "last": {
+                  "arguments": {
+                    "AngleBracketed": {
+                      "colon2_token": null,
+                      "lt_token": {},
+                      "args": {
+                        "inner": [],
+                        "last": {
+                          "Type": {
+                            "Path": {
+                              "qself": null,
+                              "path": {
+                                "leading_colon": null,
+                                "segments": {
+                                  "inner": [],
+                                  "last": {
+                                    "arguments": "None"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "gt_token": {}
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "semi_token": {}
+      }
+    },
+    {
+      "Struct": {
+        "attrs": [
+          {
+            "pound_token": {},
+            "style": "Outer",
+            "bracket_token": {},
+            "meta": {
+              "List": {
+                "delimiter": {
+                  "Paren": {}
+                }
+              }
+            }
+          },
+          {
+            "pound_token": {},
+            "style": "Outer",
+            "bracket_token": {},
+            "meta": {
+              "List": {
+                "delimiter": {
+                  "Paren": {}
+                }
+              }
+            }
+          }
+        ],
+        "vis": {
+          "Public": {}
+        },
+        "struct_token": {},
+        "generics": {
+          "lt_token": null,
+          "params": {
+            "inner": [],
+            "last": null
+          },
+          "gt_token": null,
+          "where_clause": null
+        },
+        "fields": {
+          "Named": {
+            "brace_token": {},
+            "named": {
+              "inner": [
+                [
+                  {
+                    "attrs": [
+                      {
+                        "pound_token": {},
+                        "style": "Outer",
+                        "bracket_token": {},
+                        "meta": {
+                          "List": {
+                            "delimiter": {
+                              "Paren": {}
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "pound_token": {},
+                        "style": "Outer",
+                        "bracket_token": {},
+                        "meta": {
+                          "List": {
+                            "delimiter": {
+                              "Paren": {}
+                            }
+                          }
+                        }
+                      }
+                    ],
+                    "vis": "Inherited",
+                    "mutability": "None",
+                    "colon_token": {},
+                    "ty": {
+                      "Path": {
+                        "qself": null,
+                        "path": {
+                          "leading_colon": null,
+                          "segments": {
+                            "inner": [],
+                            "last": {
+                              "arguments": "None"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {}
+                ]
+              ],
+              "last": null
+            }
+          }
+        },
+        "semi_token": null
+      }
+    },
+    {
+      "Enum": {
+        "attrs": [
+          {
+            "pound_token": {},
+            "style": "Outer",
+            "bracket_token": {},
+            "meta": {
+              "List": {
+                "delimiter": {
+                  "Paren": {}
+                }
+              }
+            }
+          }
+        ],
+        "vis": {
+          "Public": {}
+        },
+        "enum_token": {},
+        "generics": {
+          "lt_token": null,
+          "params": {
+            "inner": [],
+            "last": null
+          },
+          "gt_token": null,
+          "where_clause": null
+        },
+        "brace_token": {},
+        "variants": {
+          "inner": [
+            [
+              {
+                "attrs": [],
+                "fields": "Unit",
+                "discriminant": null
+              },
+              {}
+            ],
+            [
+              {
+                "attrs": [],
+                "fields": "Unit",
+                "discriminant": null
+              },
+              {}
+            ]
+          ],
+          "last": null
+        }
+      }
+    },
+    {
+      "Enum": {
+        "attrs": [
+          {
+            "pound_token": {},
+            "style": "Outer",
+            "bracket_token": {},
+            "meta": {
+              "List": {
+                "delimiter": {
+                  "Paren": {}
+                }
+              }
+            }
+          },
+          {
+            "pound_token": {},
+            "style": "Outer",
+            "bracket_token": {},
+            "meta": {
+              "List": {
+                "delimiter": {
+                  "Paren": {}
+                }
+              }
+            }
+          }
+        ],
+        "vis": {
+          "Public": {}
+        },
+        "enum_token": {},
+        "generics": {
+          "lt_token": null,
+          "params": {
+            "inner": [],
+            "last": null
+          },
+          "gt_token": null,
+          "where_clause": null
+        },
+        "brace_token": {},
+        "variants": {
+          "inner": [
+            [
+              {
+                "attrs": [],
+                "fields": {
+                  "Unnamed": {
+                    "paren_token": {},
+                    "unnamed": {
+                      "inner": [],
+                      "last": {
+                        "attrs": [],
+                        "vis": "Inherited",
+                        "mutability": "None",
+                        "colon_token": null,
+                        "ty": {
+                          "Path": {
+                            "qself": null,
+                            "path": {
+                              "leading_colon": null,
+                              "segments": {
+                                "inner": [],
+                                "last": {
+                                  "arguments": "None"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "discriminant": null
+              },
+              {}
+            ],
+            [
+              {
+                "attrs": [],
+                "fields": {
+                  "Unnamed": {
+                    "paren_token": {},
+                    "unnamed": {
+                      "inner": [],
+                      "last": {
+                        "attrs": [],
+                        "vis": "Inherited",
+                        "mutability": "None",
+                        "colon_token": null,
+                        "ty": {
+                          "Path": {
+                            "qself": null,
+                            "path": {
+                              "leading_colon": null,
+                              "segments": {
+                                "inner": [],
+                                "last": {
+                                  "arguments": "None"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "discriminant": null
+              },
+              {}
+            ],
+            [
+              {
+                "attrs": [],
+                "fields": {
+                  "Unnamed": {
+                    "paren_token": {},
+                    "unnamed": {
+                      "inner": [],
+                      "last": {
+                        "attrs": [],
+                        "vis": "Inherited",
+                        "mutability": "None",
+                        "colon_token": null,
+                        "ty": {
+                          "Path": {
+                            "qself": null,
+                            "path": {
+                              "leading_colon": null,
+                              "segments": {
+                                "inner": [],
+                                "last": {
+                                  "arguments": "None"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "discriminant": null
+              },
+              {}
+            ]
+          ],
+          "last": null
+        }
+      }
+    },
+    {
+      "Struct": {
+        "attrs": [
+          {
+            "pound_token": {},
+            "style": "Outer",
+            "bracket_token": {},
+            "meta": {
+              "List": {
+                "delimiter": {
+                  "Paren": {}
+                }
+              }
+            }
+          },
+          {
+            "pound_token": {},
+            "style": "Outer",
+            "bracket_token": {},
+            "meta": {
+              "List": {
+                "delimiter": {
+                  "Paren": {}
+                }
+              }
+            }
+          }
+        ],
+        "vis": {
+          "Public": {}
+        },
+        "struct_token": {},
+        "generics": {
+          "lt_token": null,
+          "params": {
+            "inner": [],
+            "last": null
+          },
+          "gt_token": null,
+          "where_clause": null
+        },
+        "fields": {
+          "Named": {
+            "brace_token": {},
+            "named": {
+              "inner": [
+                [
+                  {
+                    "attrs": [],
+                    "vis": "Inherited",
+                    "mutability": "None",
+                    "colon_token": {},
+                    "ty": {
+                      "Path": {
+                        "qself": null,
+                        "path": {
+                          "leading_colon": null,
+                          "segments": {
+                            "inner": [],
+                            "last": {
+                              "arguments": "None"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {}
+                ],
+                [
+                  {
+                    "attrs": [],
+                    "vis": "Inherited",
+                    "mutability": "None",
+                    "colon_token": {},
+                    "ty": {
+                      "Path": {
+                        "qself": null,
+                        "path": {
+                          "leading_colon": null,
+                          "segments": {
+                            "inner": [],
+                            "last": {
+                              "arguments": "None"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {}
+                ]
+              ],
+              "last": null
+            }
+          }
+        },
+        "semi_token": null
+      }
+    },
+    {
+      "Struct": {
+        "attrs": [
+          {
+            "pound_token": {},
+            "style": "Outer",
+            "bracket_token": {},
+            "meta": {
+              "List": {
+                "delimiter": {
+                  "Paren": {}
+                }
+              }
+            }
+          },
+          {
+            "pound_token": {},
+            "style": "Outer",
+            "bracket_token": {},
+            "meta": {
+              "List": {
+                "delimiter": {
+                  "Paren": {}
+                }
+              }
+            }
+          }
+        ],
+        "vis": {
+          "Public": {}
+        },
+        "struct_token": {},
+        "generics": {
+          "lt_token": null,
+          "params": {
+            "inner": [],
+            "last": null
+          },
+          "gt_token": null,
+          "where_clause": null
+        },
+        "fields": {
+          "Named": {
+            "brace_token": {},
+            "named": {
+              "inner": [
+                [
+                  {
+                    "attrs": [
+                      {
+                        "pound_token": {},
+                        "style": "Outer",
+                        "bracket_token": {},
+                        "meta": {
+                          "List": {
+                            "delimiter": {
+                              "Paren": {}
+                            }
+                          }
+                        }
+                      }
+                    ],
+                    "vis": "Inherited",
+                    "mutability": "None",
+                    "colon_token": {},
+                    "ty": {
+                      "Path": {
+                        "qself": null,
+                        "path": {
+                          "leading_colon": null,
+                          "segments": {
+                            "inner": [],
+                            "last": {
+                              "arguments": "None"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {}
+                ],
+                [
+                  {
+                    "attrs": [
+                      {
+                        "pound_token": {},
+                        "style": "Outer",
+                        "bracket_token": {},
+                        "meta": {
+                          "List": {
+                            "delimiter": {
+                              "Paren": {}
+                            }
+                          }
+                        }
+                      }
+                    ],
+                    "vis": "Inherited",
+                    "mutability": "None",
+                    "colon_token": {},
+                    "ty": {
+                      "Path": {
+                        "qself": null,
+                        "path": {
+                          "leading_colon": null,
+                          "segments": {
+                            "inner": [],
+                            "last": {
+                              "arguments": {
+                                "AngleBracketed": {
+                                  "colon2_token": null,
+                                  "lt_token": {},
+                                  "args": {
+                                    "inner": [],
+                                    "last": {
+                                      "Type": {
+                                        "Path": {
+                                          "qself": null,
+                                          "path": {
+                                            "leading_colon": null,
+                                            "segments": {
+                                              "inner": [],
+                                              "last": {
+                                                "arguments": "None"
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "gt_token": {}
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {}
+                ]
+              ],
+              "last": null
+            }
+          }
+        },
+        "semi_token": null
+      }
+    },
+    {
+      "Enum": {
+        "attrs": [
+          {
+            "pound_token": {},
+            "style": "Outer",
+            "bracket_token": {},
+            "meta": {
+              "List": {
+                "delimiter": {
+                  "Paren": {}
+                }
+              }
+            }
+          }
+        ],
+        "vis": {
+          "Public": {}
+        },
+        "enum_token": {},
+        "generics": {
+          "lt_token": null,
+          "params": {
+            "inner": [],
+            "last": null
+          },
+          "gt_token": null,
+          "where_clause": null
+        },
+        "brace_token": {},
+        "variants": {
+          "inner": [
+            [
+              {
+                "attrs": [],
+                "fields": "Unit",
+                "discriminant": null
+              },
+              {}
+            ],
+            [
+              {
+                "attrs": [],
+                "fields": "Unit",
+                "discriminant": null
+              },
+              {}
+            ],
+            [
+              {
+                "attrs": [],
+                "fields": "Unit",
+                "discriminant": null
+              },
+              {}
+            ],
+            [
+              {
+                "attrs": [],
+                "fields": "Unit",
+                "discriminant": null
+              },
+              {}
+            ],
+            [
+              {
+                "attrs": [],
+                "fields": "Unit",
+                "discriminant": null
+              },
+              {}
+            ],
+            [
+              {
+                "attrs": [],
+                "fields": "Unit",
+                "discriminant": null
+              },
+              {}
+            ],
+            [
+              {
+                "attrs": [],
+                "fields": "Unit",
+                "discriminant": null
+              },
+              {}
+            ],
+            [
+              {
+                "attrs": [],
+                "fields": "Unit",
+                "discriminant": null
+              },
+              {}
+            ]
+          ],
+          "last": null
+        }
+      }
+    },
+    {
+      "Struct": {
+        "attrs": [
+          {
+            "pound_token": {},
+            "style": "Outer",
+            "bracket_token": {},
+            "meta": {
+              "List": {
+                "delimiter": {
+                  "Paren": {}
+                }
+              }
+            }
+          },
+          {
+            "pound_token": {},
+            "style": "Outer",
+            "bracket_token": {},
+            "meta": {
+              "List": {
+                "delimiter": {
+                  "Paren": {}
+                }
+              }
+            }
+          }
+        ],
+        "vis": {
+          "Public": {}
+        },
+        "struct_token": {},
+        "generics": {
+          "lt_token": null,
+          "params": {
+            "inner": [],
+            "last": null
+          },
+          "gt_token": null,
+          "where_clause": null
+        },
+        "fields": {
+          "Named": {
+            "brace_token": {},
+            "named": {
+              "inner": [
+                [
+                  {
+                    "attrs": [],
+                    "vis": "Inherited",
+                    "mutability": "None",
+                    "colon_token": {},
+                    "ty": {
+                      "Path": {
+                        "qself": null,
+                        "path": {
+                          "leading_colon": null,
+                          "segments": {
+                            "inner": [],
+                            "last": {
+                              "arguments": "None"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {}
+                ],
+                [
+                  {
+                    "attrs": [],
+                    "vis": "Inherited",
+                    "mutability": "None",
+                    "colon_token": {},
+                    "ty": {
+                      "Path": {
+                        "qself": null,
+                        "path": {
+                          "leading_colon": null,
+                          "segments": {
+                            "inner": [],
+                            "last": {
+                              "arguments": {
+                                "AngleBracketed": {
+                                  "colon2_token": null,
+                                  "lt_token": {},
+                                  "args": {
+                                    "inner": [],
+                                    "last": {
+                                      "Type": {
+                                        "Path": {
+                                          "qself": null,
+                                          "path": {
+                                            "leading_colon": null,
+                                            "segments": {
+                                              "inner": [],
+                                              "last": {
+                                                "arguments": "None"
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  },
+                                  "gt_token": {}
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {}
+                ]
+              ],
+              "last": null
+            }
+          }
+        },
+        "semi_token": null
+      }
+    },
+    {
+      "Struct": {
+        "attrs": [
+          {
+            "pound_token": {},
+            "style": "Outer",
+            "bracket_token": {},
+            "meta": {
+              "List": {
+                "delimiter": {
+                  "Paren": {}
+                }
+              }
+            }
+          },
+          {
+            "pound_token": {},
+            "style": "Outer",
+            "bracket_token": {},
+            "meta": {
+              "List": {
+                "delimiter": {
+                  "Paren": {}
+                }
+              }
+            }
+          }
+        ],
+        "vis": {
+          "Public": {}
+        },
+        "struct_token": {},
+        "generics": {
+          "lt_token": null,
+          "params": {
+            "inner": [],
+            "last": null
+          },
+          "gt_token": null,
+          "where_clause": null
+        },
+        "fields": {
+          "Named": {
+            "brace_token": {},
+            "named": {
+              "inner": [
+                [
+                  {
+                    "attrs": [],
+                    "vis": "Inherited",
+                    "mutability": "None",
+                    "colon_token": {},
+                    "ty": {
+                      "Path": {
+                        "qself": null,
+                        "path": {
+                          "leading_colon": null,
+                          "segments": {
+                            "inner": [],
+                            "last": {
+                              "arguments": "None"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {}
+                ],
+                [
+                  {
+                    "attrs": [],
+                    "vis": "Inherited",
+                    "mutability": "None",
+                    "colon_token": {},
+                    "ty": {
+                      "Path": {
+                        "qself": null,
+                        "path": {
+                          "leading_colon": null,
+                          "segments": {
+                            "inner": [],
+                            "last": {
+                              "arguments": "None"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  {}
+                ]
+              ],
+              "last": null
+            }
+          }
+        },
+        "semi_token": null
+      }
+    },
+    {
+      "Enum": {
+        "attrs": [
+          {
+            "pound_token": {},
+            "style": "Outer",
+            "bracket_token": {},
+            "meta": {
+              "List": {
+                "delimiter": {
+                  "Paren": {}
+                }
+              }
+            }
+          },
+          {
+            "pound_token": {},
+            "style": "Outer",
+            "bracket_token": {},
+            "meta": {
+              "List": {
+                "delimiter": {
+                  "Paren": {}
+                }
+              }
+            }
+          }
+        ],
+        "vis": {
+          "Public": {}
+        },
+        "enum_token": {},
+        "generics": {
+          "lt_token": null,
+          "params": {
+            "inner": [],
+            "last": null
+          },
+          "gt_token": null,
+          "where_clause": null
+        },
+        "brace_token": {},
+        "variants": {
+          "inner": [
+            [
+              {
+                "attrs": [],
+                "fields": {
+                  "Unnamed": {
+                    "paren_token": {},
+                    "unnamed": {
+                      "inner": [
+                        [
+                          {
+                            "attrs": [],
+                            "vis": "Inherited",
+                            "mutability": "None",
+                            "colon_token": null,
+                            "ty": {
+                              "Path": {
+                                "qself": null,
+                                "path": {
+                                  "leading_colon": null,
+                                  "segments": {
+                                    "inner": [],
+                                    "last": {
+                                      "arguments": "None"
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          {}
+                        ]
+                      ],
+                      "last": {
+                        "attrs": [],
+                        "vis": "Inherited",
+                        "mutability": "None",
+                        "colon_token": null,
+                        "ty": {
+                          "Path": {
+                            "qself": null,
+                            "path": {
+                              "leading_colon": null,
+                              "segments": {
+                                "inner": [],
+                                "last": {
+                                  "arguments": {
+                                    "AngleBracketed": {
+                                      "colon2_token": null,
+                                      "lt_token": {},
+                                      "args": {
+                                        "inner": [],
+                                        "last": {
+                                          "Type": {
+                                            "Path": {
+                                              "qself": null,
+                                              "path": {
+                                                "leading_colon": null,
+                                                "segments": {
+                                                  "inner": [],
+                                                  "last": {
+                                                    "arguments": "None"
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      },
+                                      "gt_token": {}
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "discriminant": null
+              },
+              {}
+            ],
+            [
+              {
+                "attrs": [],
+                "fields": {
+                  "Unnamed": {
+                    "paren_token": {},
+                    "unnamed": {
+                      "inner": [],
+                      "last": {
+                        "attrs": [],
+                        "vis": "Inherited",
+                        "mutability": "None",
+                        "colon_token": null,
+                        "ty": {
+                          "Path": {
+                            "qself": null,
+                            "path": {
+                              "leading_colon": null,
+                              "segments": {
+                                "inner": [],
+                                "last": {
+                                  "arguments": "None"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "discriminant": null
+              },
+              {}
+            ],
+            [
+              {
+                "attrs": [],
+                "fields": {
+                  "Unnamed": {
+                    "paren_token": {},
+                    "unnamed": {
+                      "inner": [],
+                      "last": {
+                        "attrs": [],
+                        "vis": "Inherited",
+                        "mutability": "None",
+                        "colon_token": null,
+                        "ty": {
+                          "Path": {
+                            "qself": null,
+                            "path": {
+                              "leading_colon": null,
+                              "segments": {
+                                "inner": [],
+                                "last": {
+                                  "arguments": "None"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "discriminant": null
+              },
+              {}
+            ],
+            [
+              {
+                "attrs": [],
+                "fields": "Unit",
+                "discriminant": null
+              },
+              {}
+            ]
+          ],
+          "last": null
+        }
+      }
+    }
+  ]
+}
