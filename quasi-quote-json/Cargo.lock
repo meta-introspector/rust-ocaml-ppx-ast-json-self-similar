@@ -74,6 +74,7 @@ name = "json_to_rust"
 version = "0.1.0"
 dependencies = [
  "rust-flatten-json",
+ "serde",
  "serde_json",
 ]
 

@@ -1,110 +1,139 @@
 extern crate serde_json;
-use serde_json::json;
-use std::env;
+//use serde_json::json;
 use serde_json::Value;
+use std::env;
 use std::fs::File;
 extern crate flatten_json;
-use flatten_json::flatten;
-use std::io::{self, Write};
-   
-const SCHEMA : &'static [& 'static str] = &[
-    "attr_name",
-    "attr_payload",
-    "pcd_args",
-    "pcd_attributes",
-    "pcd_name",
-    "pcd_res",
-    "pcd_vars",
-    "pexp_attributes",
-    "pexp_desc",
-    "pld_attributes",
-    "pld_mutable",
-    "pld_name",
-    "pld_type",
-    "popen_attributes",
-    "popen_expr",
-    "popen_override",
-    "psig_desc",
-    "pstr_desc",
-    "ptyp_attributes",
-    "ptyp_desc",
-//    "ptyp_loc_stack",
-    "ptype_attributes",
-    "ptype_cstrs",
-    "ptype_kind",
-    "ptype_manifest",
-    "ptype_name",
-    "ptype_params",
-    "ptype_private"
-    //    "attr_loc",
-    //    "pcd_loc",
-    //    "pexp_loc",
-    //    "pexp_loc_stack",
-    //    "pld_loc",
-    //    "popen_loc",
-    //    "psig_loc",
-    //    "pstr_loc",
-    //"pos_bol",
-    //"pos_cnum",
-    //"ptyp_loc",
-    //"ptype_loc",
-    // txt2
-    //"pos_fname"
-    //"pos_lnum"
-    //    loc2
-    // loc_end
-    // loc_ghost
-    // loc_start
-];
-
+//use flatten_json::flatten;
 use std::error::Error;
+use std::collections::HashMap;
 
-fn top_level_search(item: &Value, depth: usize, inname: &str) -> Result<(),Box<dyn Error>>
-									//serde_json::Error,std::io::Error>
-{
-    if let Value::Array(arr) = &item {
-        for (i,item) in arr.into_iter().enumerate() {
-	    let indent = "  ".repeat(depth);
-	    let varname_item = format!("{}__{}_{}",inname,depth,i);	    
-	    //println!("{} tools::find_array({},{},\"{}\",\"{}\", &[",
-	    //indent,
-	    //	     depth,
-	    ///	     i,
-	    //	     inname,
-	    //	     varname_item);
-	    let _ = top_level_search(item, depth + 1, &varname_item);
-	    //println!("{} tools::end_array() ].to_vec()),",indent);
+#[derive(serde::Deserialize,serde::Serialize, Debug, PartialEq)]
+#[allow(dead_code)]
+pub struct Definition {
+    ident: String,
+    //body:  Value,
+    inname: String,
+    depth: usize
+}
+
+pub type Names = HashMap<String,Definition>;
+
+#[derive(serde::Deserialize,
+	 serde::Serialize, Debug, PartialEq)]
+#[allow(dead_code)]
+pub struct Schema {
+    items: Names,
+}
+
+fn top_level_search(
+    schema: &mut Schema,
+    item: &Value,
+    depth: usize,
+    inname: &str,
+) -> Result<(), Box<dyn Error>> {
+    //let indent = "  ".repeat(depth);
+//    println!("{} DEBUG inname {} ,",indent,inname);
+    //let item_val = format!("{}", serde_json::to_string_pretty(&item_val).unwrap());
+    //schema.items.insert(ite.to_string(),Definition {
+//	ident: item_val.to_string(),
+//	depth: depth,
+//	inname: inname.to_string(),
+  //  });
+
+    match item {
+	Value::Array(arr) => {
+            for (i, item) in arr.into_iter().enumerate() {
+		//let indent = "  ".repeat(depth);
+		let varname_item = format!("{}__{}_{}", inname, depth, i);
+		//indent,
+		//	     depth,
+		//	     inname,
+		//	     varname_item);
+		let _ = top_level_search(schema,item, depth + 1, &varname_item);
+		//println!("{} tools::end_array() ].to_vec()),",indent);
+            }
 	}
-    }    
-    if let Value::Object(obj) = &item {
-	for (key, value) in obj.iter() {
-	    let k =key.to_string();
-	    let k2 = k.as_str();
-	    if SCHEMA.contains(&k2) {
-		let indent = "  ".repeat(depth);
-		let parts  = k.split("_").take(2).collect::<Vec<&str>>();
-	        let outname = format!("{}__{}_{}_{}",inname,parts[0],parts[1],depth);
-		//println!("{} tools::find_object({},\"{}\",\"{}\",\"{}\",\"{}\",&[",indent,depth,inname,parts[0],parts[1],&outname);
-		let _ = top_level_search(value, depth +1,&outname);
-		let mut flat_value: Value = json!({});
-		let _ = flatten(value, &mut flat_value, None, true);
-		println!("{}",serde_json::to_string_pretty(&flat_value).unwrap());		
-		//println!("{} tools::end_object() ].to_vec()),",indent);
-	    }
+	Value::String(s) => {
+	    //let s2 = s.to_string();
+	    let long_name = format!("{}.{}", inname, s);
+	    if schema.items.contains_key(&long_name) {
+	    } else {
+		schema.items.insert(long_name.to_string(),Definition {
+		    ident: s.to_string(),
+		    depth: depth,
+		    inname: inname.to_string(),
+		});
+	    }	    
 	}
+	// None => {
+	// }
+	Value::Object(obj) => {
+            for (key, value) in obj.iter() {
+		let k = key.to_string();
+		let k2 = k.as_str();
+		let long_name = format!("{}.{}", inname, k2);
+		let long_name2 = long_name.to_string();
+		if schema.items.contains_key(&long_name2) {
+		}
+		else{
+		    schema.items.insert(long_name.to_string(),Definition {
+			ident: k2.to_string(),
+			//body: value.clone(),
+			depth: depth,
+			inname: inname.to_string(),
+		    });
+		}
+
+                //let indent = "  ".repeat(depth);
+                let parts = k.split("_").take(2).collect::<Vec<&str>>();
+		let pnames =  parts.join("_");		    
+                let outname = format!("{}__{}_{}", inname, pnames, depth);
+                let _ = top_level_search(schema,value, depth + 1, &outname);
+                //let mut flat_value: Value = json!({});
+                //let _ = flatten(value, &mut flat_value, None, true);
+                //println!("{}", serde_json::to_string_pretty(&flat_value).unwrap());
+	    } // else {
+              //       //println!("adding schema {}", k2);
+              //       schema.items.insert(k2.to_string(),Definition {
+	      // 		ident: k2.to_string(),
+	      // 		//body: value.clone(),
+	      // 	    depth: depth,
+	      // 		inname: inname.to_string(),
+	    // 	    });
+	    
+
+	    
+	},
+	serde_json::Value::Null => {
+	    //	    println!("unknown2 {:?}", item);
+	    let long_name = format!("{} NONE", inname);
+	    if schema.items.contains_key(&long_name) {
+	    } else {
+		schema.items.insert(long_name.to_string(),Definition {
+		    ident: "None".to_string(),
+		    depth: depth,
+		    inname: inname.to_string(),
+		});
+	    }	    
+
+	}
+	_ => {
+	    println!("unknown {:?}", item);
+	},
     }
     return Ok(());
 }
 
 fn main() {
     for argument in env::args_os().skip(1) {
-	let json_file_path = argument;
-	let s = json_file_path.into_string().unwrap();
-	let json_data: Value = serde_json::from_reader(File::open(s).unwrap()).unwrap();
-	//println!("fn main() {{");
-	//println!("let results = &[");
-	let _ = top_level_search(&json_data,0,"r");
-	//println!("].to_vec();");
-	//println!("}}");
+        let json_file_path = argument;
+        let s = json_file_path.into_string().unwrap();
+        let json_data: Value = serde_json::from_reader(File::open(s).unwrap()).unwrap();
+        let mut s= Schema {
+	    items: Names::new()
+	};
+        let _s2 = top_level_search(&mut s, &json_data, 0, "r").unwrap();
+	println!("{}", serde_json::to_string_pretty(&s).unwrap());
     }
 }
