@@ -1,0 +1,164 @@
+
+#+begin_src shell
+cut -d. -f3 ocaml_types.gron  | sort | uniq -c | sort -n
+#+end_src
+
+#+RESULTS:
+|    1 | json   | = | {}; |
+|    2 | Mod    | = | {}; |
+|    2 | Type   | = | {}; |
+|   14 | Enum   | = | {}; |
+|   14 | Struct | = | {}; |
+|   18 | Mod    |   |     |
+|   35 |        |   |     |
+|   94 | Type   |   |     |
+| 1449 | Enum   |   |     |
+| 1693 | Struct |   |     |
+
+   18 Mod
+     94 Type
+   1449 Enum
+   1693 Struct
+
+#+begin_src shell
+grep Enum  ocaml_types.gron | cut -d. -f3-4  | sort | uniq -c | sort -n | tail -100
+#+end_src
+
+#+RESULTS:
+|    1 | Enum.ident       | = | ConstantDesc         |
+|    1 | Enum.ident       | = | ConstructorArguments |
+|    1 | Enum.ident       | = | CoreTypeDesc         |
+|    1 | Enum.ident       | = | ExpressionDesc       |
+|    1 | Enum.ident       | = | Injectivity          |
+|    1 | Enum.ident       | = | LongIdent            |
+|    1 | Enum.ident       | = | ModuleExprDesc       |
+|    1 | Enum.ident       | = | MutableFlag          |
+|    1 | Enum.ident       | = | Payload              |
+|    1 | Enum.ident       | = | RecFlag              |
+|    1 | Enum.ident       | = | SignatureItemDesc    |
+|    1 | Enum.ident       | = | StructureItemDesc    |
+|    1 | Enum.ident       | = | TypeKind             |
+|    1 | Enum.ident       | = | Variance             |
+|    8 | Enum.attrs[1]    | = | {};                  |
+|   14 | Enum             | = | {};                  |
+|   14 | Enum.attrs       | = | [];                  |
+|   14 | Enum.attrs[0]    | = | {};                  |
+|   14 | Enum.brace_token |   |                      |
+|   14 | Enum.brace_token | = | {};                  |
+|   14 | Enum.enum_token  |   |                      |
+|   14 | Enum.enum_token  | = | {};                  |
+|   14 | Enum.generics    | = | {};                  |
+|   14 | Enum.variants    | = | {};                  |
+|   14 | Enum.vis         | = | {};                  |
+|   28 | Enum.vis         |   |                      |
+|   56 | Enum.attrs[1]    |   |                      |
+|   84 | Enum.generics    |   |                      |
+|   98 | Enum.attrs[0]    |   |                      |
+| 1035 | Enum.variants    |   |                      |
+
+#+begin_src shell
+grep Struct  ocaml_types.gron | cut -d. -f3-4  | sort | uniq -c | sort -n | tail -100
+#+end_src
+
+#+RESULTS:
+|    1 | Enum.ident          | = | StructureItemDesc      |
+|    1 | Struct.ident        | = | Attribute              |
+|    1 | Struct.ident        | = | Constant               |
+|    1 | Struct.ident        | = | ConstructorDeclaration |
+|    1 | Struct.ident        | = | CoreType               |
+|    1 | Struct.ident        | = | Expression             |
+|    1 | Struct.ident        | = | LabelDeclaration       |
+|    1 | Struct.ident        | = | Location               |
+|    1 | Struct.ident        | = | LocString              |
+|    1 | Struct.ident        | = | ModuleExpr             |
+|    1 | Struct.ident        | = | OpenDescription        |
+|    1 | Struct.ident        | = | OpenInfos              |
+|    1 | Struct.ident        | = | SignatureItem          |
+|    1 | Struct.ident        | = | StructureItem          |
+|    1 | Struct.ident        | = | TypeDeclaration        |
+|    1 | Struct.vis          | = | Inherited              |
+|    1 | Type.ident          | = | Structure              |
+|    1 | Type.ty             |   |                        |
+|    2 | Enum.variants       |   |                        |
+|   13 | Struct.attrs[1]     | = | {};                    |
+|   13 | Struct.vis          | = | {};                    |
+|   14 | Struct              | = | {};                    |
+|   14 | Struct.attrs        | = | [];                    |
+|   14 | Struct.attrs[0]     | = | {};                    |
+|   14 | Struct.fields       | = | {};                    |
+|   14 | Struct.generics     | = | {};                    |
+|   14 | Struct.semi_token   | = | null;                  |
+|   14 | Struct.struct_token |   |                        |
+|   14 | Struct.struct_token | = | {};                    |
+|   26 | Struct.vis          |   |                        |
+|   84 | Struct.generics     |   |                        |
+|   91 | Struct.attrs[1]     |   |                        |
+|   98 | Struct.attrs[0]     |   |                        |
+| 1255 | Struct.fields       |   |                        |
+
+#+begin_src shell
+jq ".items[]|select(.Mod)|.Mod|keys" ocaml_types.json  | sort | uniq -c | sort -n
+#+end_src
+
+#+RESULTS:
+| 2 | [         |
+| 2 | ]         |
+| 2 | attrs     |
+| 2 | content   |
+| 2 | ident     |
+| 2 | mod_token |
+| 2 | semi      |
+| 2 | unsafety  |
+| 2 | vis       |
+
+#+begin_src shell
+jq ".items[]|select(.Enum)|.Enum|keys" ocaml_types.json  | sort | uniq -c | sort -n
+#+end_src
+
+#+RESULTS:
+| 14 | [           |
+| 14 | ]           |
+| 14 | attrs       |
+| 14 | brace_token |
+| 14 | enum_token  |
+| 14 | generics    |
+| 14 | ident       |
+| 14 | variants    |
+| 14 | vis         |
+
+#+begin_src shell
+jq ".items[]|select(.Struct)|.Struct|keys" ocaml_types.json  | sort | uniq -c | sort -n
+#+end_src
+
+#+RESULTS:
+| 14 | [            |
+| 14 | ]            |
+| 14 | attrs        |
+| 14 | fields       |
+| 14 | generics     |
+| 14 | ident        |
+| 14 | semi_token   |
+| 14 | struct_token |
+| 14 | vis          |
+
+
+Here are the names of the structures in the rust code that can parse the ocaml asts
+#+begin_src shell
+jq ".items[]|select(.Struct)|.Struct.ident" ocaml_types.json  | sort | uniq -c | sort -n
+#+end_src
+
+#+RESULTS:
+| 1 | Attribute              |
+| 1 | Constant               |
+| 1 | ConstructorDeclaration |
+| 1 | CoreType               |
+| 1 | Expression             |
+| 1 | LabelDeclaration       |
+| 1 | Location               |
+| 1 | LocString              |
+| 1 | ModuleExpr             |
+| 1 | OpenDescription        |
+| 1 | OpenInfos              |
+| 1 | SignatureItem          |
+| 1 | StructureItem          |
+| 1 | TypeDeclaration        |

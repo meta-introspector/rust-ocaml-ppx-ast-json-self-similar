@@ -1,0 +1,59 @@
+#+begin_src shell
+cut -d. -f3 ~/2024/08/20/self-similar/ocaml-rust-unification/src/ocaml_types.gron | sort | uniq -c | sort -n
+#+end_src
+
+#+RESULTS:
+|    1 | json   | = | {}; |
+|    2 | Mod    | = | {}; |
+|    2 | Type   | = | {}; |
+|   12 | Mod    |   |     |
+|   14 | Enum   | = | {}; |
+|   14 | Struct | = | {}; |
+|   35 |        |   |     |
+|   76 | Type   |   |     |
+| 1211 | Enum   |   |     |
+| 1462 | Struct |   |     |
+
+
+#+begin_src shell
+grep Struct ~/2024/08/20/self-similar/ocaml-rust-unification/src/ocaml_types.gron | cut -d. -f3-4 | sort | uniq -c | sort -n | tail
+#+end_src
+
+#+RESULTS:
+|   14 | Struct.attrs        | = | [];   |
+|   14 | Struct.attrs[0]     | = | {};   |
+|   14 | Struct.fields       | = | {};   |
+|   14 | Struct.generics     | = | {};   |
+|   14 | Struct.semi_token   | = | null; |
+|   14 | Struct.struct_token | = | {};   |
+|   84 | Struct.generics     |   |       |
+|   91 | Struct.attrs[1]     |   |       |
+|   98 | Struct.attrs[0]     |   |       |
+| 1065 | Struct.fields       |   |       |
+
+#+begin_src shell
+grep Struct.fields ~/2024/08/20/self-similar/ocaml-rust-unification/src/ocaml_types.gron | cut -d. -f4-6 | sort | uniq -c | sort -n | tail
+#+end_src
+
+#+RESULTS:
+|   14 | fields                   | = | {}; |
+|   14 | fields.Named             | = | {}; |
+|   14 | fields.Named.brace_token | = | {}; |
+|   14 | fields.Named.named       | = | {}; |
+| 1023 | fields.Named.named       |   |     |
+
+#+begin_src shell
+grep Struct.fields.Named.named ~/2024/08/20/self-similar/ocaml-rust-unification/src/ocaml_types.gron | cut -d. -f6-9 | sort | uniq -c | sort -n | tail
+#+end_src
+
+#+RESULTS:
+|  14 | named                           | = | {}; |
+|  14 | named.inner                     | = | []; |
+|  18 | named.inner[1][0].attrs[0].meta |   |     |
+|  23 | named.inner[5][0].ty.Path       |   |     |
+|  27 | named.inner[0][0].attrs[0].meta |   |     |
+|  46 | named.inner[4][0].ty.Path       |   |     |
+|  53 | named.inner[3][0].ty.Path       |   |     |
+|  64 | named.inner[2][0].ty.Path       |   |     |
+|  84 | named.inner[0][0].ty.Path       |   |     |
+| 209 | named.inner[1][0].ty.Path       |   |     |
